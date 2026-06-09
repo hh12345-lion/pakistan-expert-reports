@@ -1,0 +1,22 @@
+/** 301 redirects from legacy/shorthand slugs to canonical SEO-ARCHITECTURE.md slugs */
+export const SEO_SLUG_REDIRECTS: Record<string, string> = {
+  "/asylum-profiles/ahmadi-muslims": "/asylum-profiles/ahmadi-muslims-pakistan",
+  "/asylum-profiles/blasphemy": "/asylum-profiles/blasphemy-accusations-pakistan",
+  "/asylum-profiles/women-hbv": "/asylum-profiles/women-honour-based-violence",
+  "/asylum-profiles/lgbtq-pakistan": "/asylum-profiles/lgbtq-asylum-pakistan",
+  "/asylum-profiles/political-persecution": "/asylum-profiles/political-persecution-pakistan",
+  "/guides/ahmadi-asylum-pakistan": "/guides/ahmadi-asylum-pakistan-guide",
+  "/guides/blasphemy-pakistan-guide": "/guides/blasphemy-pakistan-expert-guide",
+  "/guides/honour-based-violence": "/guides/honour-based-violence-pakistan",
+  "/guides/pakistan-political-asylum": "/guides/pakistan-political-asylum-guide",
+  "/case-types/blasphemy-asylum": "/case-types/blasphemy-asylum-pakistan",
+  "/case-types/hbv-pakistan": "/case-types/honour-based-violence-pakistan",
+  "/case-types/political-claim": "/case-types/political-claim-pakistan",
+  "/services/lgbtq-asylum-reports": "/services/lgbtq-asylum-pakistan",
+  "/services/cpin-challenge-reports": "/services/cpin-challenge",
+  "/services/expert-oral-evidence": "/services/oral-evidence",
+  "/what-is-a-pakistan-expert-witness": "/what-is-a-pakistan-expert-report",
+  "/fees": "/how-to-instruct",
+  "/faq": "/guides",
+  "/experts": "/qualifications",
+};
