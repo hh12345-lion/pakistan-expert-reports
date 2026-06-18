@@ -10,6 +10,7 @@ import {
   servicesNavLinks,
 } from "@/data/navigation";
 import { NavDropdown } from "@/components/layout/NavDropdown";
+import { SITE_REGION_LABEL } from "@/lib/constants";
 
 export function Header() {
   const toggleRef = useRef<HTMLInputElement>(null);
@@ -39,8 +40,11 @@ export function Header() {
       />
 
       <div className="header-bar mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex min-h-[44px] min-w-0 shrink items-center gap-2 font-bold text-[#0C3547]">
+        <Link href="/" className="flex min-h-[44px] min-w-0 shrink flex-col justify-center gap-0.5 font-bold text-[#0C3547]">
           <span className="truncate text-base sm:text-lg lg:text-xl">Pakistan Expert Reports</span>
+          <span className="truncate text-[10px] font-medium uppercase tracking-wide text-[#2E7D52] sm:text-xs">
+            {SITE_REGION_LABEL} immigration &amp; asylum
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 overflow-visible lg:flex" aria-label="Main">

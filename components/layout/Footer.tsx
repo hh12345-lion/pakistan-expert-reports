@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CookieSettingsButton } from "@/components/cookies";
-import { SITE_EMAIL } from "@/lib/constants";
+import { SITE_EMAIL, SITE_REGION_LABEL, SITE_TAGLINE } from "@/lib/constants";
 import { asylumProfiles } from "@/data/asylum-profiles";
 import { services } from "@/data/services";
 
@@ -65,7 +65,8 @@ export function Footer() {
           </div>
         </div>
         <p className="mt-10 border-t border-white/20 pt-6 text-center text-xs text-white/60">
-          Pakistan Expert Reports connects UK solicitors with qualified Pakistan country expert reports. We are not a law firm and do not provide legal advice.
+          {SITE_TAGLINE}. Based in the {SITE_REGION_LABEL}; we connect UK solicitors with qualified Pakistan country
+          expert reports. We are not a law firm and do not provide legal advice.
         </p>
         <p className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center text-xs text-white/50">
           <Link href="/privacy" className="inline-flex min-h-[44px] items-center hover:text-white">

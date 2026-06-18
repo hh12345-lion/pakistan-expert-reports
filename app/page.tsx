@@ -12,7 +12,7 @@ import { createMetadata } from "@/lib/metadata";
 export const metadata = createMetadata({
   title: "Pakistan Expert Reports UK | Country Expert Witness & Asylum Tribunal Evidence",
   description:
-    "Commission qualified Pakistan expert reports for UK immigration tribunals. Country condition reports for Ahmadis, blasphemy, Shia Muslims, honour-based violence, LGBTQ+, and political persecution. Legal Aid compatible.",
+    "Commission qualified Pakistan expert reports for UK immigration tribunals and asylum appeals. Serving UK solicitors and Legal Aid practitioners. Ahmadis, blasphemy, Shia Muslims, honour-based violence, LGBTQ+, and political persecution.",
   path: "/",
 });
 
@@ -34,8 +34,9 @@ export default function HomePage() {
           </h1>
           <p className="mt-6 max-w-2xl text-base text-white/80 sm:text-lg">
             Pakistan Expert Reports connects UK immigration solicitors, law firms, and Legal Aid practitioners with
-            qualified Pakistan country experts for asylum appeals, Ahmadi persecution, blasphemy accusations, Shia
-            Muslims, honour-based violence, LGBTQ+ claims, and political persecution.
+            qualified Pakistan country experts for First-tier Tribunal and Upper Tribunal asylum appeals — including
+            Ahmadi persecution, blasphemy accusations, Shia Muslims, honour-based violence, LGBTQ+ claims, and political
+            persecution.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             <Link

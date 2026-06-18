@@ -19,9 +19,9 @@ export default function PrivacyPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell title="Privacy Policy" breadcrumbs={crumbs}>
         <p className="text-[#374151] leading-relaxed">
-          Pakistan Expert Reports is operated to connect UK solicitors with qualified Pakistan country experts. We
-          collect personal data submitted through our contact form (name, law firm, email, phone, and case details)
-          solely to respond to instruction requests and match appropriate experts.
+          Pakistan Expert Reports is operated in the United Kingdom to connect UK immigration solicitors with qualified
+          Pakistan country experts. We collect personal data submitted through our contact form (name, law firm, email,
+          phone, and case details) solely to respond to instruction requests and match appropriate experts.
         </p>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Contact form submissions are stored in our secure Google Sheet lead log and may trigger webhook notifications

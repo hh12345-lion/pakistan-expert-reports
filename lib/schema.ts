@@ -38,7 +38,7 @@ export function organizationSchema() {
     url: SITE_URL,
     email: SITE_EMAIL,
     address: { "@type": "PostalAddress", addressCountry: "GB" },
-    areaServed: ["United Kingdom", "United States", "European Union"],
+    areaServed: "United Kingdom",
     sameAs: [LINKEDIN_URL],
   };
 }

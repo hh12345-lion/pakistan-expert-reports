@@ -14,12 +14,15 @@ export default function ContactPage() {
   return (
     <PageShell
       title="Instruct a Pakistan Expert Report"
-      subtitle="Confidential case submission. Response within one business day."
+      subtitle="For UK solicitors and Legal Aid practitioners. Confidential case submission — response within one business day."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
     >
       <div className="grid min-w-0 grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-12">
         <aside className="order-2 h-fit rounded-[8px] border border-[#C8DDD6] bg-[#F4F8F7] p-5 sm:p-6 lg:order-2 lg:col-span-1">
           <h2 className="font-bold text-[#0C3547]">Why instruct through Pakistan Expert Reports</h2>
+          <p className="mt-2 text-sm text-[#374151]">
+            We serve UK immigration solicitors instructing expert evidence for FTT, UT, and JR proceedings.
+          </p>
           <ul className="mt-4 space-y-4 text-sm text-[#374151]">
             <li>All major Pakistani asylum profiles covered</li>
             <li>Legal Aid rates available</li>

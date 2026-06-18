@@ -18,9 +18,10 @@ export default function TermsPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell title="Terms of Use" breadcrumbs={crumbs}>
         <p className="text-[#374151] leading-relaxed">
-          Pakistan Expert Reports is an expert report matching service for UK immigration solicitors. We are not a law
-          firm and do not provide legal advice. Expert reports instructed through our service operate independently and
-          owe their primary duty to the tribunal under Immigration Tribunal Practice Direction paragraph 10.
+          Pakistan Expert Reports is a United Kingdom service connecting UK immigration solicitors with qualified
+          Pakistan country experts. We are not a law firm and do not provide legal advice. Expert reports instructed
+          through our service operate independently and owe their primary duty to the tribunal under Immigration
+          Tribunal Practice Direction paragraph 10.
         </p>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Fees quoted are indicative and confirmed on instruction. Cancellation terms are agreed between the instructing

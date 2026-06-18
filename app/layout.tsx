@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | Pakistan Expert Reports",
   },
   description:
-    "Commission qualified Pakistan expert reports for UK immigration tribunals. Country condition reports for Ahmadis, blasphemy, Shia Muslims, honour-based violence, LGBTQ+, and political persecution. Legal Aid compatible.",
+    "Commission qualified Pakistan expert reports for UK immigration tribunals and asylum appeals. Serving UK solicitors and Legal Aid practitioners. Ahmadis, blasphemy, Shia Muslims, honour-based violence, LGBTQ+, and political persecution.",
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
     other: process.env.BING_SITE_VERIFICATION
