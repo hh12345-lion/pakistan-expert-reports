@@ -5,9 +5,8 @@ import { SEO_SLUG_REDIRECTS } from "@/lib/seo/slug-redirects";
 const PRIMARY_HOST = "www.pakistanexpertreports.com";
 const PRIMARY_ORIGIN = `https://${PRIMARY_HOST}`;
 
-/** Apex and redirect domains that should 301 to the canonical www primary site */
+/** Alternate domains that should 301 to the canonical primary site */
 const REDIRECT_HOSTS = new Set([
-  "pakistanexpertreports.com",
   "pakistancountryexpert.com",
   "www.pakistancountryexpert.com",
 ]);
