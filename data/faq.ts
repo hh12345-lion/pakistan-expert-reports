@@ -49,7 +49,7 @@ export const faqs: FAQ[] = [
   {
     question: "Are Pakistan expert reports compatible with Legal Aid?",
     answer:
-      "Yes. Most Pakistan expert reports in asylum proceedings are Legal Aid funded through the Legal Aid Agency. Prior authority is required before instruction. Pakistan Expert Reports provides LAA-compatible rates for all major Pakistani asylum profiles. See our how-to-instruct page for typical rates and the prior authority process.",
+      "Yes. Most Pakistan expert reports in asylum proceedings are Legal Aid funded through the Legal Aid Agency. Prior authority is required before the expert begins drafting. Pakistan Expert Reports provides LAA-compatible rates for all major Pakistani asylum profiles. Send a brief with the hearing date and we confirm typical rates and the prior authority path.",
   },
   {
     question: "Which Pakistani asylum profiles most commonly require expert evidence?",

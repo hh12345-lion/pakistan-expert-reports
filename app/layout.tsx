@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Alegreya, Source_Sans_3 } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieConsentProvider } from "@/components/cookies";
@@ -8,9 +8,15 @@ import { SITE_URL } from "@/lib/constants";
 import { isProductionSite } from "@/lib/seo/is-production";
 import "./globals.css";
 
-const inter = Inter({
+const alegreya = Alegreya({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-alegreya",
+  display: "swap",
+});
+
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  variable: "--font-source",
   display: "swap",
 });
 
@@ -46,13 +52,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-GB" className={`${inter.variable} h-full`}>
-      <body className="flex min-h-full flex-col font-sans antialiased">
+    <html lang="en-GB" className={`${alegreya.variable} ${sourceSans.variable} h-full`}>
+      <body className="flex min-h-full flex-col font-sans antialiased lg:flex-row">
         <ConsentDefaultsScript />
         <CookieConsentProvider>
           <Header />
-          <div className="flex-1">{children}</div>
-          <Footer />
+          <div className="flex min-w-0 flex-1 flex-col">
+            <div className="flex-1">{children}</div>
+            <Footer />
+          </div>
         </CookieConsentProvider>
       </body>
     </html>

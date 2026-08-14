@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { appendRow } from "@/lib/google-sheets";
+import { appendRowWithRetry, isGoogleSheetsConfigured } from "@/lib/google-sheets";
 
 const BRAND_NAME = "Pakistan Expert Reports";
 
@@ -20,22 +20,15 @@ function sanitize(str: string): string {
   return str.replace(/<[^>]*>/g, "").trim();
 }
 
-function sheetsConfigured(): boolean {
-  return Boolean(
-    process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL &&
-      process.env.GOOGLE_PRIVATE_KEY &&
-      process.env.GOOGLE_SHEET_ID
-  );
-}
-
 function getWebhookUrl(): string | undefined {
   return process.env.Lead_notification_url || process.env.LEAD_NOTIFICATION_URL;
 }
 
 export async function POST(request: Request) {
   const webhookUrl = getWebhookUrl();
+  const sheetsReady = isGoogleSheetsConfigured();
 
-  if (!sheetsConfigured() && !webhookUrl) {
+  if (!sheetsReady && !webhookUrl) {
     const missing: string[] = [];
     if (!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL) missing.push("GOOGLE_SERVICE_ACCOUNT_EMAIL");
     if (!process.env.GOOGLE_PRIVATE_KEY) missing.push("GOOGLE_PRIVATE_KEY");
@@ -43,7 +36,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error:
-          "Lead storage not configured. Add Google Sheets vars and/or Lead_notification_url to .env.local.",
+          "Lead storage not configured. Add Google Sheets vars and/or Lead_notification_url in Netlify.",
         ...(process.env.NODE_ENV === "development" && { missing }),
       },
       { status: 500 }
@@ -80,9 +73,9 @@ export async function POST(request: Request) {
     BRAND_NAME,
   ];
 
-  if (sheetsConfigured()) {
+  if (sheetsReady) {
     try {
-      await appendRow(row);
+      await appendRowWithRetry(row);
     } catch (error) {
       console.error("Google Sheets write failed:", {
         message: error instanceof Error ? error.message : "Unknown error",
@@ -109,12 +102,12 @@ export async function POST(request: Request) {
 
       if (!res.ok) {
         console.error("Lead webhook failed:", res.status);
-        if (!sheetsConfigured()) {
+        if (!sheetsReady) {
           return NextResponse.json({ error: "Webhook failed" }, { status: 502 });
         }
       }
     } catch {
-      if (!sheetsConfigured()) {
+      if (!sheetsReady) {
         return NextResponse.json({ error: "Server error" }, { status: 500 });
       }
       console.error("Lead webhook request failed");

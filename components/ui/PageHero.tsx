@@ -10,13 +10,13 @@ export function PageHero({
   breadcrumbs?: Crumb[];
 }) {
   return (
-    <section className="bg-[#0C3547] py-12 sm:py-14 md:py-20">
-      <div className="mx-auto max-w-6xl min-w-0 px-4 sm:px-6 lg:px-8">
+    <section className="border-b border-[#D0D4C8] bg-[#E6E9DF] py-10 sm:py-12">
+      <div className="mx-auto max-w-3xl min-w-0 px-4 sm:px-8">
         {breadcrumbs && breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
-        <h1 className="break-words text-2xl font-bold tracking-tight text-white min-[375px]:text-3xl sm:text-4xl lg:text-5xl">
+        <h1 className="font-display break-words text-3xl font-semibold tracking-tight text-[#1B1F18] sm:text-4xl">
           {title}
         </h1>
-        {subtitle && <p className="mt-4 max-w-3xl text-base text-white/80 sm:text-lg">{subtitle}</p>}
+        {subtitle && <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#3E4538]">{subtitle}</p>}
       </div>
     </section>
   );

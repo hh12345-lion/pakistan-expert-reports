@@ -2,12 +2,11 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { SITE_EMAIL } from "@/lib/constants";
-import { CASE_PROFILES, FUNDING_OPTIONS, PROCEEDINGS, URGENCY_OPTIONS } from "@/data/contact-options";
+import { BRIEF_SUBMIT_LABEL, SITE_EMAIL } from "@/lib/constants";
 
 const inputClass =
-  "w-full min-w-0 max-w-full rounded-[4px] border border-[#C8DDD6] px-4 py-3 text-base text-[#374151] focus:border-[#0C3547] focus:outline-none focus:ring-1 focus:ring-[#0C3547] min-h-[44px]";
-const labelClass = "mb-1 block text-sm font-medium text-[#0C3547]";
+  "w-full min-w-0 max-w-full border-0 border-b border-[#D0D4C8] bg-transparent px-0 py-3 text-base text-[#1B1F18] placeholder:text-[#3E4538]/45 focus:border-[#8B1E3F] focus:outline-none focus:ring-0 min-h-[44px]";
+const labelClass = "mb-1 block text-xs font-semibold uppercase tracking-[0.12em] text-[#4A5C3A]";
 
 export function ContactForm() {
   const router = useRouter();
@@ -23,12 +22,12 @@ export function ContactForm() {
       fullName: String(data.get("name") ?? "").trim(),
       organisation: String(data.get("law_firm") ?? "").trim(),
       email: String(data.get("email") ?? "").trim(),
-      phone: String(data.get("phone") ?? "").trim(),
-      caseProfile: String(data.get("case_profile") ?? "").trim(),
-      proceedings: String(data.get("proceedings") ?? "").trim(),
-      funding: String(data.get("funding") ?? "").trim(),
-      deadline: String(data.get("deadline") ?? "").trim(),
-      urgency: String(data.get("urgency") ?? "").trim(),
+      phone: "",
+      caseProfile: "",
+      proceedings: "",
+      funding: "",
+      deadline: "",
+      urgency: "",
       summary: String(data.get("summary") ?? "").trim(),
     };
 
@@ -46,117 +45,47 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="min-w-0 w-full space-y-5">
+    <form onSubmit={handleSubmit} className="min-w-0 w-full space-y-7">
       <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
 
-      <div className="grid min-w-0 grid-cols-1 gap-5 sm:grid-cols-2">
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="name">
-            Full Name *
-          </label>
-          <input id="name" name="name" required autoComplete="name" className={inputClass} />
-        </div>
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="law_firm">
-            Law Firm *
-          </label>
-          <input id="law_firm" name="law_firm" required autoComplete="organization" className={inputClass} />
-        </div>
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="email">
-            Email *
-          </label>
-          <input id="email" type="email" name="email" required autoComplete="email" className={inputClass} />
-        </div>
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="phone">
-            Phone
-          </label>
-          <input id="phone" type="tel" name="phone" autoComplete="tel" className={inputClass} />
-        </div>
-      </div>
-
-      <div className="grid min-w-0 grid-cols-1 gap-5 sm:grid-cols-2">
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="case_profile">
-            Case Profile
-          </label>
-          <select id="case_profile" name="case_profile" className={inputClass}>
-            <option value="">Select profile</option>
-            {CASE_PROFILES.map((p) => (
-              <option key={p} value={p}>
-                {p}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="proceedings">
-            Proceedings
-          </label>
-          <select id="proceedings" name="proceedings" className={inputClass}>
-            <option value="">Select proceedings</option>
-            {PROCEEDINGS.map((p) => (
-              <option key={p} value={p}>
-                {p}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-
-      <div className="grid min-w-0 grid-cols-1 gap-5 sm:grid-cols-2">
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="funding">
-            Funding
-          </label>
-          <select id="funding" name="funding" className={inputClass}>
-            <option value="">Select funding</option>
-            {FUNDING_OPTIONS.map((f) => (
-              <option key={f} value={f}>
-                {f}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="min-w-0">
-          <label className={labelClass} htmlFor="deadline">
-            Deadline / hearing date
-          </label>
-          <input id="deadline" type="date" name="deadline" className={inputClass} />
-        </div>
+      <div className="min-w-0">
+        <label className={labelClass} htmlFor="name">
+          Full name *
+        </label>
+        <input id="name" name="name" required autoComplete="name" className={inputClass} />
       </div>
 
       <div className="min-w-0">
-        <label className={labelClass} htmlFor="urgency">
-          Urgency
+        <label className={labelClass} htmlFor="law_firm">
+          Law firm *
         </label>
-        <select id="urgency" name="urgency" className={inputClass}>
-          <option value="">Select urgency</option>
-          {URGENCY_OPTIONS.map((u) => (
-            <option key={u} value={u}>
-              {u}
-            </option>
-          ))}
-        </select>
+        <input id="law_firm" name="law_firm" required autoComplete="organization" className={inputClass} />
+      </div>
+
+      <div className="min-w-0">
+        <label className={labelClass} htmlFor="email">
+          Email *
+        </label>
+        <input id="email" type="email" name="email" required autoComplete="email" className={inputClass} />
       </div>
 
       <div className="min-w-0">
         <label className={labelClass} htmlFor="summary">
-          Brief case description *
+          Brief case note *
         </label>
         <textarea
           id="summary"
           name="summary"
           required
-          rows={5}
-          className={`${inputClass} min-h-[120px] resize-y`}
+          rows={4}
+          placeholder="Profile, forum (FTT / UT / fresh claim), and any hearing date."
+          className={`${inputClass} min-h-[110px] resize-y`}
         />
       </div>
 
       {status === "error" && (
-        <p className="rounded-[4px] border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-          Something went wrong. Please try again or email us at{" "}
+        <p className="border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          Something went wrong. Email{" "}
           <a href={`mailto:${SITE_EMAIL}`} className="font-medium underline">
             {SITE_EMAIL}
           </a>
@@ -164,12 +93,8 @@ export function ContactForm() {
         </p>
       )}
 
-      <button
-        type="submit"
-        disabled={status === "loading"}
-        className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[4px] bg-[#2E7D52] px-6 py-3 text-base font-semibold text-white hover:bg-[#256b42] disabled:opacity-60 sm:w-auto"
-      >
-        {status === "loading" ? "Submitting..." : "Contact Us"}
+      <button type="submit" disabled={status === "loading"} className="btn-brief disabled:opacity-60">
+        {status === "loading" ? "Sending…" : BRIEF_SUBMIT_LABEL}
       </button>
     </form>
   );

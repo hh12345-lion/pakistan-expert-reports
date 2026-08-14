@@ -1,16 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #0C3547;
-  --color-accent: #2e7d52;
-  --color-highlight: #c8922a;
-  --color-section-alt: #f4f8f7;
-  --color-border: #c8ddd6;
-  --color-body: #374151;
-  --font-sans: var(--font-inter);
-  --radius-card: 8px;
-  --radius-sm: 4px;
-  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.06);
+  --color-ink: #1b1f18;
+  --color-accent: #8b1e3f;
+  --color-highlight: #4a5c3a;
+  --color-section-alt: #e6e9df;
+  --color-border: #d0d4c8;
+  --color-body: #3e4538;
+  --color-paper: #f4f6f1;
+  --font-sans: var(--font-source);
+  --font-display: var(--font-alegreya);
   --breakpoint-xs: 375px;
 }
 
@@ -19,13 +18,20 @@ html {
 }
 
 body {
-  background: #ffffff;
-  color: #374151;
-  font-family: var(--font-inter), system-ui, sans-serif;
+  background: #f4f6f1;
+  color: #3e4538;
+  font-family: var(--font-source), system-ui, sans-serif;
   overflow-x: hidden;
   min-width: 320px;
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-alegreya), Georgia, serif;
 }
 
 img,
@@ -40,7 +46,6 @@ a {
   word-break: break-word;
 }
 
-/* Prevent flex/grid children from forcing horizontal overflow */
 main,
 section {
   min-width: 0;
@@ -57,16 +62,77 @@ section {
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.folio-rail {
+  background: #1b1f18;
 }
 
-/* Mobile table scroll - edge-to-edge within section padding */
+.folio-rule {
+  background-image: linear-gradient(#d0d4c8, #d0d4c8);
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
+.prose-folio h2 {
+  font-family: var(--font-alegreya), Georgia, serif;
+  color: #1b1f18;
+  font-size: 1.45rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-folio h3 {
+  font-family: var(--font-alegreya), Georgia, serif;
+  color: #1b1f18;
+  font-size: 1.15rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-folio p,
+.prose-folio li {
+  line-height: 1.75;
+  color: #3e4538;
+}
+
+.prose-folio a {
+  color: #8b1e3f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.btn-brief {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: #8b1e3f;
+  color: #f4f6f1;
+  padding: 0.75rem 1.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: background 0.15s ease;
+}
+
+.btn-brief:hover {
+  background: #6e1732;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid currentColor;
+  padding: 0.75rem 1.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .table-scroll {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -84,7 +150,6 @@ section {
   }
 }
 
-/* Mobile nav toggle icons (checkbox is sibling of .header-bar) */
 #mobile-nav-toggle:checked ~ .header-bar .icon-open {
   display: none;
 }
@@ -93,9 +158,8 @@ section {
   display: block;
 }
 
-/* Mobile nav: full-width panel scroll on small screens */
 #mobile-menu {
-  max-height: min(85vh, 32rem);
+  max-height: min(85vh, 28rem);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }

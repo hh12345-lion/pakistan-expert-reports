@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { SEO_SLUG_REDIRECTS } from "@/lib/seo/slug-redirects";
+import { resolveLegacyRedirect } from "@/lib/seo/slug-redirects";
 
 const PRIMARY_HOST = "www.pakistanexpertreports.com";
 const PRIMARY_ORIGIN = `https://${PRIMARY_HOST}`;
@@ -20,7 +20,7 @@ export function middleware(request: NextRequest) {
   }
 
   const pathname = request.nextUrl.pathname.replace(/\/$/, "") || "/";
-  const redirectPath = SEO_SLUG_REDIRECTS[pathname];
+  const redirectPath = resolveLegacyRedirect(pathname);
   if (redirectPath) {
     const url = new URL(redirectPath + request.nextUrl.search, request.url);
     return NextResponse.redirect(url, 301);

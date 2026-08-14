@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { buildPublicUrlInventory } from "@/lib/seo/publicUrlInventory";
 
 /**
- * Indexable URLs only. Excludes noindex routes: /contact, /thank-you, /privacy, /terms
+ * Indexable URLs only: / and /faq. Form and legal pages stay noindex.
  * (see NON_INDEXABLE_PATHS in lib/seo/publicUrlInventory.ts).
  */
 export default function sitemap(): MetadataRoute.Sitemap {

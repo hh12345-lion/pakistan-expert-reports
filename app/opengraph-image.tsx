@@ -13,35 +13,46 @@ export default function OpenGraphImage() {
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundColor: "#0C3547",
-          padding: 80,
+          justifyContent: "flex-end",
+          backgroundColor: "#1B1F18",
+          padding: 72,
         }}
       >
         <div
           style={{
-            fontSize: 64,
+            fontSize: 20,
+            fontWeight: 600,
+            color: "#A8B39A",
+            letterSpacing: "0.18em",
+            textTransform: "uppercase",
+          }}
+        >
+          UK tribunal folio
+        </div>
+        <div
+          style={{
+            marginTop: 20,
+            fontSize: 56,
             fontWeight: 700,
-            color: "#FFFFFF",
+            color: "#F4F6F1",
             letterSpacing: "-0.02em",
-            textAlign: "center",
             lineHeight: 1.1,
+            maxWidth: 900,
           }}
         >
           Pakistan Expert Reports
         </div>
         <p
           style={{
-            marginTop: 32,
-            fontSize: 36,
-            fontWeight: 600,
-            color: "#2E7D52",
-            textAlign: "center",
-            lineHeight: 1.3,
+            marginTop: 20,
+            fontSize: 26,
+            fontWeight: 500,
+            color: "rgba(244,246,241,0.7)",
+            lineHeight: 1.35,
+            maxWidth: 820,
           }}
         >
-          Pakistan Expert Report Services UK
+          Country expert evidence for UK immigration & asylum tribunals
         </p>
       </div>
     ),

@@ -12,18 +12,15 @@ export function FAQSection({
   if (faqs.length === 0) return null;
 
   return (
-    <section id={id} className="scroll-mt-24 py-12" aria-labelledby={`${id}-heading`}>
-      <h2 id={`${id}-heading`} className="mb-8 text-2xl font-bold text-[#0C3547]">
+    <section id={id} className="scroll-mt-8 py-10" aria-labelledby={`${id}-heading`}>
+      <h2 id={`${id}-heading`} className="mb-6 font-display text-2xl font-semibold text-[#1B1F18]">
         {title}
       </h2>
-      <div className="space-y-6">
+      <div className="divide-y divide-[#D0D4C8] border-y border-[#D0D4C8]">
         {faqs.map((faq) => (
-          <div
-            key={faq.question}
-            className="rounded-[8px] border border-[#C8DDD6] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.08),0_4px_16px_rgba(0,0,0,0.06)]"
-          >
-            <h3 className="text-lg font-semibold text-[#0C3547]">{faq.question}</h3>
-            <p className="mt-3 text-[#374151] leading-relaxed">{faq.answer}</p>
+          <div key={faq.question} className="py-6">
+            <h3 className="font-display text-lg font-semibold text-[#1B1F18]">{faq.question}</h3>
+            <p className="mt-3 leading-relaxed text-[#3E4538]">{faq.answer}</p>
           </div>
         ))}
       </div>

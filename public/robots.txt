@@ -3,6 +3,7 @@
 User-agent: *
 Allow: /
 Disallow: /thank-you
+Disallow: /send-brief
 Disallow: /api/
 Disallow: /admin/
 Disallow: /private/

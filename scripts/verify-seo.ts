@@ -6,10 +6,7 @@
 import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 import { buildPublicUrlInventory } from "../lib/seo/publicUrlInventory";
-import {
-  REQUIRED_CPIN_SECTION_IDS,
-  verifySeoArchitecture,
-} from "../lib/seo/architecture-verify";
+import { verifySeoArchitecture } from "../lib/seo/architecture-verify";
 import { SITE_URL } from "../lib/constants";
 
 const SITEMAP_PATH = join(process.cwd(), "public", "sitemap.xml");
@@ -64,14 +61,6 @@ function main() {
   if (!robots.includes(`Sitemap: ${inventory.siteUrl}/sitemap.xml`)) {
     failed = true;
     console.error(`robots.txt missing correct Sitemap line for ${inventory.siteUrl}`);
-  }
-
-  const cpinPage = readFileSync(join(process.cwd(), "app", "cpin-country-guidance", "page.tsx"), "utf-8");
-  for (const id of REQUIRED_CPIN_SECTION_IDS) {
-    if (!cpinPage.includes(`id="${id}"`)) {
-      failed = true;
-      console.error(`CPIN page missing section anchor: #${id}`);
-    }
   }
 
   const archIssues = verifySeoArchitecture();

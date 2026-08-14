@@ -2,15 +2,16 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import {
-  asylumProfilesNavLinks,
-  caseTypesNavLinks,
-  mobileNavGroups,
-  resourcesNavLinks,
-  servicesNavLinks,
-} from "@/data/navigation";
-import { NavDropdown } from "@/components/layout/NavDropdown";
-import { SITE_REGION_LABEL } from "@/lib/constants";
+import { BRIEF_LABEL, BRIEF_PATH, SITE_NAME } from "@/lib/constants";
+
+const railLinks = [
+  { href: "/#evidence", label: "Evidence" },
+  { href: "/#profiles", label: "Profiles" },
+  { href: "/#reports", label: "Reports" },
+  { href: "/#process", label: "Process" },
+  { href: "/#cpin", label: "CPIN" },
+  { href: "/faq", label: "Questions" },
+] as const;
 
 export function Header() {
   const toggleRef = useRef<HTMLInputElement>(null);
@@ -30,7 +31,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#C8DDD6] bg-white shadow-sm">
+    <header className="folio-rail z-50 text-[#F4F6F1] lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-56 lg:shrink-0 lg:flex-col lg:justify-between lg:self-start">
       <input
         ref={toggleRef}
         id="mobile-nav-toggle"
@@ -39,79 +40,69 @@ export function Header() {
         aria-hidden
       />
 
-      <div className="header-bar mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex min-h-[44px] min-w-0 shrink flex-col justify-center gap-0.5 font-bold text-[#0C3547]">
-          <span className="truncate text-base sm:text-lg lg:text-xl">Pakistan Expert Reports</span>
-          <span className="truncate text-[10px] font-medium uppercase tracking-wide text-[#2E7D52] sm:text-xs">
-            {SITE_REGION_LABEL} immigration &amp; asylum
+      <div className="header-bar flex items-center justify-between gap-3 px-4 py-3 lg:flex-col lg:items-stretch lg:px-5 lg:py-8">
+        <Link href="/" className="min-w-0" onClick={closeMobileMenu}>
+          <span className="block font-display text-lg font-semibold leading-tight tracking-tight lg:text-xl">
+            {SITE_NAME}
+          </span>
+          <span className="mt-1 hidden text-[10px] uppercase tracking-[0.18em] text-[#A8B39A] lg:block">
+            UK tribunal folio
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 overflow-visible lg:flex" aria-label="Main">
-          <Link
-            href="/"
-            className="inline-flex min-h-[44px] items-center rounded-[4px] px-2 py-2 text-sm text-[#374151] hover:bg-[#F4F8F7] hover:text-[#0C3547]"
-          >
-            Home
-          </Link>
-          <NavDropdown label="Asylum Profiles" href="/asylum-profiles" items={asylumProfilesNavLinks} scrollable />
-          <NavDropdown label="Case Types" href="/case-types" items={caseTypesNavLinks} scrollable />
-          <NavDropdown label="Services" href="/services" items={servicesNavLinks} scrollable />
-          <NavDropdown label="Resources" href="/guides" items={[...resourcesNavLinks]} scrollable />
-          <Link
-            href="/contact"
-            className="ml-2 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#2E7D52] px-4 py-2 text-sm font-semibold text-white hover:bg-[#256b42]"
-          >
-            Contact Us
-          </Link>
+        <nav className="hidden flex-col gap-1 lg:flex" aria-label="Main">
+          {railLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="inline-flex min-h-[40px] items-center border-l border-transparent pl-3 text-sm text-[#F4F6F1]/70 transition hover:border-[#8B1E3F] hover:text-white"
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
-        <label
-          htmlFor="mobile-nav-toggle"
-          className="mobile-nav-label inline-flex min-h-[44px] min-w-[44px] shrink-0 cursor-pointer items-center justify-center rounded-[4px] border border-[#C8DDD6] lg:hidden"
-        >
-          <span className="sr-only">Toggle menu</span>
-          <svg className="icon-open h-6 w-6 text-[#0C3547]" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <svg className="icon-close hidden h-6 w-6 text-[#0C3547]" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </label>
+        <Link href={BRIEF_PATH} className="btn-brief hidden w-full lg:inline-flex">
+          {BRIEF_LABEL}
+        </Link>
+
+        <div className="flex items-center gap-2 lg:hidden">
+          <Link href={BRIEF_PATH} className="btn-brief px-3 py-2 text-[11px]">
+            {BRIEF_LABEL}
+          </Link>
+          <label
+            htmlFor="mobile-nav-toggle"
+            className="inline-flex min-h-[44px] min-w-[44px] cursor-pointer items-center justify-center border border-white/20"
+          >
+            <span className="sr-only">Toggle menu</span>
+            <svg className="icon-open h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 8h16M4 16h16" />
+            </svg>
+            <svg className="icon-close hidden h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </label>
+        </div>
       </div>
 
       <nav
         id="mobile-menu"
-        className="hidden border-t border-[#C8DDD6] bg-white peer-checked:block lg:hidden"
+        className="hidden border-t border-white/10 px-4 py-4 peer-checked:block lg:hidden"
         aria-label="Mobile"
       >
-        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
-          {mobileNavGroups.map((group) => (
-            <div key={group.title} className="mb-6">
-              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-[#0C3547]">{group.title}</p>
-              <ul className="space-y-1">
-                {group.links.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      onClick={closeMobileMenu}
-                      className="inline-flex min-h-[44px] w-full items-center rounded-[4px] px-3 text-sm text-[#374151] hover:bg-[#F4F8F7]"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <ul className="space-y-1">
+          {railLinks.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                onClick={closeMobileMenu}
+                className="inline-flex min-h-[44px] w-full items-center text-sm text-[#F4F6F1]/80"
+              >
+                {link.label}
+              </Link>
+            </li>
           ))}
-          <Link
-            href="/contact"
-            onClick={closeMobileMenu}
-            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[4px] bg-[#2E7D52] px-4 py-3 text-sm font-semibold text-white hover:bg-[#256b42]"
-          >
-            Contact Us
-          </Link>
-        </div>
+        </ul>
       </nav>
     </header>
   );
