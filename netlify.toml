@@ -4,16 +4,7 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[functions]
-  directory = "netlify/functions"
-
-# Primary handler: Next.js app/api/submit-lead (Google Sheets + webhook).
-# Uncomment only for webhook-only deploys without the Next.js API route:
-# [[redirects]]
-#   from = "/api/submit-lead"
-#   to = "/.netlify/functions/submit-lead"
-#   status = 200
-#   force = true
+# Briefs POST to Next.js /api/submit-lead and append to Google Sheets.
 
 [[headers]]
   for = "/sitemap.xml"

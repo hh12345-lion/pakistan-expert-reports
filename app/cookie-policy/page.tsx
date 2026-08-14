@@ -2,7 +2,8 @@ import { PageShell } from "@/components/layout/PageShell";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { createMetadata } from "@/lib/metadata";
 import { CATEGORY_META } from "@/lib/cookies/constants";
-import { SITE_EMAIL } from "@/lib/constants";
+import { BRIEF_PATH } from "@/lib/constants";
+import Link from "next/link";
 
 export const metadata = createMetadata({
   title: "Cookie Policy | Pakistan Expert Reports",
@@ -87,10 +88,11 @@ export default function CookiePolicyPage() {
 
         <h2 className="mt-10 text-xl font-bold text-[#1A2740]">Contact</h2>
         <p className="mt-4 text-[#3D4654] leading-relaxed">
-          Questions about this policy:{" "}
-          <a href={`mailto:${SITE_EMAIL}`} className="text-[#5A8FA8] hover:underline">
-            {SITE_EMAIL}
-          </a>
+          Questions about this policy: use the{" "}
+          <Link href={BRIEF_PATH} className="text-[#8B1E3F] hover:underline">
+            brief form
+          </Link>
+          .
         </p>
       </PageShell>
     </>

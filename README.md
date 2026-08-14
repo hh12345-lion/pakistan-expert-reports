@@ -32,8 +32,7 @@ Set in `.env.local` (never commit this file):
 | `GOOGLE_SERVICE_ACCOUNT_EMAIL` | Service account email |
 | `GOOGLE_PRIVATE_KEY` | RSA private key (keep `\n` escapes in quotes) |
 | `GOOGLE_SHEET_ID` | Spreadsheet ID from the URL |
-| `GOOGLE_SHEET_TAB_NAME` | Tab name (e.g. `Sheet26`) |
-| `Lead_notification_url` | Optional n8n/webhook URL |
+| `GOOGLE_SHEET_TAB_NAME` | Tab name (e.g. `Sheet1`) |
 
 Share the spreadsheet with the service account email as **Editor**.
 
@@ -58,5 +57,3 @@ Do not commit `.next/` or `.env.local`.
 Submissions POST to `/api/submit-lead` and append a row to Google Sheets with:
 
 Timestamp, Full Name, Law Firm, Email, Phone, Case Profile, Proceedings, Funding, Deadline, Urgency, Brief Case Description, Brand name
-
-Optional webhook notification if `Lead_notification_url` is set.

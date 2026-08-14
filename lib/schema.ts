@@ -1,4 +1,4 @@
-import { SITE_EMAIL, SITE_URL, LINKEDIN_URL } from "./constants";
+import { SITE_URL, LINKEDIN_URL } from "./constants";
 
 export type FAQ = { question: string; answer: string };
 export type BreadcrumbItem = { name: string; href?: string };
@@ -36,7 +36,6 @@ export function organizationSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: "Pakistan Expert Reports",
     url: SITE_URL,
-    email: SITE_EMAIL,
     address: { "@type": "PostalAddress", addressCountry: "GB" },
     areaServed: "United Kingdom",
     sameAs: [LINKEDIN_URL],

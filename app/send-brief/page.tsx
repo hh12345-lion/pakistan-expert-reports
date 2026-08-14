@@ -1,5 +1,5 @@
 import { ContactForm } from "@/components/forms/ContactForm";
-import { BRIEF_LABEL, SITE_EMAIL } from "@/lib/constants";
+import { BRIEF_LABEL } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
@@ -23,12 +23,6 @@ export default function SendBriefPage() {
         <div className="mt-10">
           <ContactForm />
         </div>
-        <p className="mt-8 text-sm text-[#3E4538]">
-          Prefer email?{" "}
-          <a href={`mailto:${SITE_EMAIL}`} className="font-medium text-[#8B1E3F] underline-offset-2 hover:underline">
-            {SITE_EMAIL}
-          </a>
-        </p>
       </div>
     </section>
   );

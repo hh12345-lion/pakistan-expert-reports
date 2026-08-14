@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { BRIEF_SUBMIT_LABEL, SITE_EMAIL } from "@/lib/constants";
+import { BRIEF_SUBMIT_LABEL } from "@/lib/constants";
 
 const inputClass =
   "w-full min-w-0 max-w-full border-0 border-b border-[#D0D4C8] bg-transparent px-0 py-3 text-base text-[#1B1F18] placeholder:text-[#3E4538]/45 focus:border-[#8B1E3F] focus:outline-none focus:ring-0 min-h-[44px]";
@@ -85,11 +85,7 @@ export function ContactForm() {
 
       {status === "error" && (
         <p className="border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-          Something went wrong. Email{" "}
-          <a href={`mailto:${SITE_EMAIL}`} className="font-medium underline">
-            {SITE_EMAIL}
-          </a>
-          .
+          Something went wrong. Please try again.
         </p>
       )}
 

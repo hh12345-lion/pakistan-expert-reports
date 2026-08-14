@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CookieSettingsButton } from "@/components/cookies";
-import { BRIEF_LABEL, BRIEF_PATH, SITE_EMAIL, SITE_NAME } from "@/lib/constants";
+import { BRIEF_LABEL, BRIEF_PATH, SITE_NAME } from "@/lib/constants";
 
 export function Footer() {
   return (
@@ -8,9 +8,6 @@ export function Footer() {
       <div className="mx-auto flex max-w-3xl flex-col gap-4 px-4 py-6 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
         <div>
           <p className="font-display text-base font-semibold text-[#1B1F18]">{SITE_NAME}</p>
-          <a href={`mailto:${SITE_EMAIL}`} className="mt-0.5 block text-sm text-[#4A5C3A] hover:text-[#8B1E3F]">
-            {SITE_EMAIL}
-          </a>
         </div>
         <nav aria-label="Footer" className="flex flex-wrap items-center gap-x-1 text-sm text-[#3E4538]">
           <Link href={BRIEF_PATH} className="inline-flex min-h-[44px] items-center px-2 hover:text-[#8B1E3F]">

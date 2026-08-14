@@ -2,7 +2,6 @@ export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
   "https://www.pakistanexpertreports.com";
 export const SITE_NAME = "Pakistan Expert Reports";
-export const SITE_EMAIL = "cases@pakistanexpertreports.com";
 /** Visible copy: site serves UK immigration practitioners only */
 export const SITE_REGION_LABEL = "United Kingdom";
 export const SITE_TAGLINE =
