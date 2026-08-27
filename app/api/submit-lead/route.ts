@@ -1,18 +1,27 @@
 import { NextResponse } from "next/server";
-import { appendRowWithRetry, isGoogleSheetsConfigured } from "@/lib/google-sheets";
+import {
+  appendRowWithRetry,
+  ensureBriefHeaderRow,
+  isGoogleSheetsConfigured,
+} from "@/lib/google-sheets";
 
 const BRAND_NAME = "Pakistan Expert Reports";
 
+function getSiteDomain(): string {
+  const raw = process.env.NEXT_PUBLIC_SITE_URL || "https://pakistanexpertreports.com";
+  try {
+    return new URL(raw).hostname.replace(/^www\./, "");
+  } catch {
+    return "pakistanexpertreports.com";
+  }
+}
+
 type LeadBody = {
   fullName?: string;
+  name?: string;
   organisation?: string;
+  law_firm?: string;
   email?: string;
-  phone?: string;
-  caseProfile?: string;
-  proceedings?: string;
-  funding?: string;
-  deadline?: string;
-  urgency?: string;
   summary?: string;
 };
 
@@ -42,9 +51,10 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  const fullName = sanitize(body.fullName ?? "");
+  const fullName = sanitize(body.fullName ?? body.name ?? "");
   const email = (body.email ?? "").toLowerCase().trim();
-  const phone = sanitize(body.phone ?? "");
+  const organisation = sanitize(body.organisation ?? body.law_firm ?? "");
+  const summary = sanitize(body.summary ?? "");
 
   if (!fullName || !email) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
@@ -53,19 +63,14 @@ export async function POST(request: Request) {
   const row = [
     new Date().toISOString(),
     fullName,
-    sanitize(body.organisation ?? ""),
+    organisation,
     email,
-    phone,
-    sanitize(body.caseProfile ?? ""),
-    sanitize(body.proceedings ?? ""),
-    sanitize(body.funding ?? ""),
-    body.deadline ?? "",
-    sanitize(body.urgency ?? ""),
-    sanitize(body.summary ?? ""),
+    summary,
     BRAND_NAME,
   ];
 
   try {
+    await ensureBriefHeaderRow();
     await appendRowWithRetry(row);
   } catch (error) {
     console.error("Google Sheets write failed:", {
@@ -73,6 +78,29 @@ export async function POST(request: Request) {
       timestamp: new Date().toISOString(),
     });
     return NextResponse.json({ error: "Failed to save submission" }, { status: 500 });
+  }
+
+  
+  const webhookUrl =
+    process.env.Lead_notification_url || process.env.LEAD_NOTIFICATION_URL;
+  if (webhookUrl) {
+    try {
+      await fetch(webhookUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          "Full Name": fullName,
+          Email: email,
+          "Phone Number": "",
+          "Brand name": BRAND_NAME,
+          domain: getSiteDomain(),
+        }),
+      });
+    } catch (error) {
+      console.error("Lead webhook failed:", {
+        message: error instanceof Error ? error.message : "Unknown error",
+      });
+    }
   }
 
   return NextResponse.json({ ok: true });
