@@ -10,10 +10,10 @@ export type ArchitectureIssue = { level: "error" | "warn"; message: string };
 export function verifySeoArchitecture(): ArchitectureIssue[] {
   const issues: ArchitectureIssue[] = [];
 
-  if (SITE_URL !== "https://www.pakistanexpertreports.com") {
+  if (SITE_URL !== "https://pakistanexpertreports.com") {
     issues.push({
       level: "error",
-      message: `SITE_URL must be https://www.pakistanexpertreports.com (got ${SITE_URL})`,
+      message: `SITE_URL must be https://pakistanexpertreports.com (got ${SITE_URL})`,
     });
   }
 

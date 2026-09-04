@@ -52,6 +52,58 @@ function sheetRange(sheetName: string, a1Suffix = "A:A"): string {
   return `'${escaped}'!${a1Suffix}`;
 }
 
+/** Must match netlify/functions/submit-brief.mjs BRIEF_COLUMNS */
+export const BRIEF_HEADERS = [
+  "Timestamp",
+  "Full Name",
+  "Law Firm",
+  "Email",
+  "Brief case note",
+  "Brand",
+] as const;
+
+export async function ensureBriefHeaderRow(target?: SheetTarget): Promise<void> {
+  const sheets = getSheetsClient();
+  const spreadsheetId = target?.spreadsheetId || process.env.GOOGLE_SHEET_ID;
+  const sheetName = target?.sheetName || process.env.GOOGLE_SHEET_TAB_NAME || "Sheet1";
+  if (!spreadsheetId) {
+    throw new Error("Missing spreadsheet ID: set GOOGLE_SHEET_ID or pass spreadsheetId");
+  }
+
+  const range = sheetRange(sheetName, "1:1");
+  const existing = await sheets.spreadsheets.values.get({ spreadsheetId, range });
+  const row = existing.data.values?.[0] ?? [];
+  const alreadyLabeled = BRIEF_HEADERS.every((header, i) => row[i] === header);
+  if (alreadyLabeled) return;
+
+  const rowEmpty = row.every((cell) => !String(cell ?? "").trim());
+  if (!rowEmpty) {
+    const info = await sheets.spreadsheets.get({ spreadsheetId });
+    const tab = info.data.sheets?.find((s) => s.properties?.title === sheetName);
+    const sheetId = tab?.properties?.sheetId ?? 0;
+    await sheets.spreadsheets.batchUpdate({
+      spreadsheetId,
+      requestBody: {
+        requests: [
+          {
+            insertDimension: {
+              range: { sheetId, dimension: "ROWS", startIndex: 0, endIndex: 1 },
+              inheritFromBefore: false,
+            },
+          },
+        ],
+      },
+    });
+  }
+
+  await sheets.spreadsheets.values.update({
+    spreadsheetId,
+    range: sheetRange(sheetName, "A1"),
+    valueInputOption: "RAW",
+    requestBody: { values: [[...BRIEF_HEADERS]] },
+  });
+}
+
 export async function appendRow(
   values: CellValue[],
   target?: SheetTarget

@@ -4,7 +4,15 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Briefs POST to Next.js /api/submit-lead and append to Google Sheets.
+[functions]
+  directory = "netlify/functions"
+
+# Production: Send a brief → mjs function (named sheet columns).
+[[redirects]]
+  from = "/api/submit-lead"
+  to = "/.netlify/functions/submit-brief"
+  status = 200
+  force = true
 
 [[headers]]
   for = "/sitemap.xml"
