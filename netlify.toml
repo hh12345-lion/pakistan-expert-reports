@@ -8,6 +8,14 @@
   directory = "netlify/functions"
 
 # Production: Send a brief → mjs function (named sheet columns).
+# AHREFS_WWW_APEX_REDIRECT — flatten https://www → apex (reduces Ahrefs redirect-chain)
+[[redirects]]
+  from = "/*"
+  to = "https://pakistanexpertreports.com/:splat"
+  status = 301
+  force = true
+  conditions = {Host = ["www.pakistanexpertreports.com"]}
+
 [[redirects]]
   from = "/api/submit-lead"
   to = "/.netlify/functions/submit-brief"
