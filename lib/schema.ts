@@ -36,6 +36,13 @@ export function organizationSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: "Pakistan Expert Reports",
     url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/icon.png`,
+      width: 192,
+      height: 192,
+    },
+    image: `${SITE_URL}/icon.png`,
     address: { "@type": "PostalAddress", addressCountry: "GB" },
     areaServed: "United Kingdom",
     sameAs: [LINKEDIN_URL],

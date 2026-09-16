@@ -19,22 +19,22 @@ export default function PrivacyPage() {
     <>
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell title="Privacy Policy" breadcrumbs={crumbs}>
-        <p className="text-[#3E4538] leading-relaxed">
-          Pakistan Expert Reports is operated in the United Kingdom to connect UK immigration solicitors with qualified
+        <p className="text-[#3F433E] leading-relaxed">
+          Pakistan Expert Reports is operated to connect immigration solicitors with qualified
           Pakistan country experts. We collect personal data submitted through the brief form (name, law firm, email,
           and case note) solely to respond to requests and match appropriate experts.
         </p>
-        <p className="mt-4 text-[#3E4538] leading-relaxed">
+        <p className="mt-4 text-[#3F433E] leading-relaxed">
           Brief submissions are stored in our secure Google Sheet lead log. We retain data only as long as necessary
           to fulfil your request. We do not sell personal data. You may request deletion through the{" "}
-          <Link href={BRIEF_PATH} className="font-medium text-[#8B1E3F] underline-offset-2 hover:underline">
+          <Link href={BRIEF_PATH} className="font-medium text-[#801F37] underline-offset-2 hover:underline">
             brief form
           </Link>
           . We use cookies as described in our Cookie Policy. Non-essential tracking scripts load only after you grant
           consent.
         </p>
-        <h2 className="mt-8 text-lg font-bold text-[#1B1F18]">Your Rights (GDPR)</h2>
-        <p className="mt-4 text-[#3E4538] leading-relaxed">
+        <h2 className="mt-8 text-lg font-bold text-[#191D18]">Your Rights (GDPR)</h2>
+        <p className="mt-4 text-[#3F433E] leading-relaxed">
           You have the right to access, rectify, erase, restrict processing, and port your personal data. You may
           withdraw consent for non-essential cookies at any time via Cookie Settings in the footer. To exercise your
           rights, use the brief form.

@@ -16,12 +16,12 @@ export const caseTypes: CaseType[] = [
   {
     slug: "asylum-appeal-ftt",
     title: "FTT Asylum Appeal",
-    metaTitle: "Pakistan Expert Report for FTT Asylum Appeals | First-tier Tribunal UK",
+    metaTitle: "Pakistan Expert Report for FTT Asylum Appeals | First-tier Tribunal",
     metaDescription:
       "Pakistan expert report for First-tier Tribunal asylum appeals. Country condition reports for Ahmadis, blasphemy, Shia Muslims, honour-based violence, LGBTQ+, and political persecution. Legal Aid compatible.",
     h1: "Pakistan Expert Report for First-tier Tribunal Asylum Appeals",
     content: [
-      "First-tier Tribunal (Immigration and Asylum Chamber) appeals are the primary forum for challenging Home Office refusals of Pakistani asylum claims. Pakistan is the second-highest asylum claim nationality in the UK, spanning Ahmadi persecution, blasphemy accusations, Shia sectarian targeting, honour-based violence, LGBTQ+ criminalisation under s377, political persecution including PTI supporters, and risk on return for failed asylum seekers.",
+      "First-tier Tribunal (Immigration and Asylum Chamber) appeals are the primary forum for challenging Home Office refusals of Pakistani asylum claims. Pakistan is among the highest-volume asylum claim nationalities, spanning Ahmadi persecution, blasphemy accusations, Shia sectarian targeting, honour-based violence, LGBTQ+ criminalisation under s377, political persecution including PTI supporters, and risk on return for failed asylum seekers.",
       "Expert country condition reports provide the independent, authoritative evidence tribunals require to assess credibility, risk on return, state protection, and internal relocation. Reports must comply with Immigration Tribunal Practice Direction paragraph 10 and the Expert Reports in the Immigration Tribunal guide (October 2025) by Adam Pipe of No.8 Chambers.",
       "Early instruction is critical. Allow 2 to 3 weeks for a standard report. Pakistan Expert Reports matches solicitors with qualified Pakistan country experts who have tribunal acceptance records, current CPIN knowledge including the March 2025 Ahmadis CPIN Version 6.0, and familiarity with MN and Others (Ahmadis) Pakistan CG [2012] UKUT 00389.",
     ],
@@ -47,7 +47,7 @@ export const caseTypes: CaseType[] = [
   {
     slug: "upper-tribunal-pakistan",
     title: "Upper Tribunal Pakistan",
-    metaTitle: "Pakistan Expert Report Upper Tribunal | Country Guidance UK",
+    metaTitle: "Pakistan Expert Report Upper Tribunal | Country Guidance",
     metaDescription:
       "Pakistan expert report for Upper Tribunal country guidance and departure cases. MN and Others [2012], March 2025 Ahmadis CPIN, and oral evidence.",
     h1: "Pakistan Expert Report for Upper Tribunal Proceedings",
@@ -78,12 +78,12 @@ export const caseTypes: CaseType[] = [
   {
     slug: "ahmadi-asylum-claims",
     title: "Ahmadi Asylum Claims",
-    metaTitle: "Ahmadi Asylum Pakistan Expert Report UK | March 2025 CPIN & MN and Others",
+    metaTitle: "Ahmadi Asylum Pakistan Expert Report | March 2025 CPIN & MN and Others",
     metaDescription:
-      "Ahmadi asylum Pakistan expert report for UK tribunals. Ordinance XX 1984, TLP mob violence, March 2025 CPIN Version 6.0, MN and Others [2012], and Ahmadiyya verification.",
+      "Ahmadi asylum Pakistan expert report for tribunals. Ordinance XX 1984, TLP mob violence, March 2025 CPIN Version 6.0, MN and Others [2012], and Ahmadiyya verification.",
     h1: "Ahmadi Asylum Claims from Pakistan: Expert Report Evidence",
     content: [
-      "Ahmadi asylum claims from Pakistan are the largest single Pakistan asylum profile in UK immigration tribunals. Ahmadis are legally prohibited under Ordinance XX 1984 from calling themselves Muslim, using Islamic terminology, or practising their faith openly. Violations carry criminal penalties and expose Ahmadis to blasphemy charges under ss295 to 298 of the Pakistan Penal Code.",
+      "Ahmadi asylum claims from Pakistan are the largest single Pakistan asylum profile in immigration tribunals. Ahmadis are legally prohibited under Ordinance XX 1984 from calling themselves Muslim, using Islamic terminology, or practising their faith openly. Violations carry criminal penalties and expose Ahmadis to blasphemy charges under ss295 to 298 of the Pakistan Penal Code.",
       "Expert reports address TLP mob violence, the rising killing of Ahmadis, police complicity in harassment, judicial reluctance to decide blasphemy cases due to fear of retribution, and the March 2025 CPIN Version 6.0 position that the state is able but unwilling to protect. Reports must be consistent with MN and Others (Ahmadis) Pakistan CG [2012] UKUT 00389 and current country conditions.",
       "Country-specific expertise is essential. Expert reports must demonstrate current knowledge of Ahmadi legal restrictions, community visibility, Ahmadiyya Muslim Association UK verification procedures, and the specific risk profile of the appellant.",
     ],
@@ -109,12 +109,12 @@ export const caseTypes: CaseType[] = [
   {
     slug: "blasphemy-asylum-pakistan",
     title: "Blasphemy Asylum Pakistan",
-    metaTitle: "Blasphemy Asylum Pakistan Expert Report UK | ss295-298 PPC Evidence",
+    metaTitle: "Blasphemy Asylum Pakistan Expert Report | ss295-298 PPC Evidence",
     metaDescription:
-      "Blasphemy asylum Pakistan expert report for UK tribunals. ss295-C death penalty, mob justice, acquittal risk, TLP violence, and state protection failures.",
+      "Blasphemy asylum Pakistan expert report for tribunals. ss295-C death penalty, mob justice, acquittal risk, TLP violence, and state protection failures.",
     h1: "Blasphemy Asylum Claims from Pakistan: Expert Report Evidence",
     content: [
-      "Blasphemy asylum claims from Pakistan are among the most common persecution grounds in UK immigration tribunals. Pakistan's blasphemy laws under ss295 to 298 of the Pakistan Penal Code carry the death penalty for blasphemy against the Prophet Muhammad under s295-C. Laws are widely misused against religious minorities, Ahmadis, Christians, and personal enemies.",
+      "Blasphemy asylum claims from Pakistan are among the most common persecution grounds in immigration tribunals. Pakistan's blasphemy laws under ss295 to 298 of the Pakistan Penal Code carry the death penalty for blasphemy against the Prophet Muhammad under s295-C. Laws are widely misused against religious minorities, Ahmadis, Christians, and personal enemies.",
       "Expert reports address the specific circumstances of the blasphemy accusation, police protection failures, mob justice risk including TLP violence, and whether acquittal provides genuine protection or merely legal clearance that fails to address ongoing extremist risk. Reports must address state ability versus willingness to protect.",
       "Expert reports analyse whether effective state protection is realistically available given police and judicial complicity, and whether internal relocation would expose the appellant to renewed accusations or vigilante violence.",
     ],
@@ -140,9 +140,9 @@ export const caseTypes: CaseType[] = [
   {
     slug: "honour-based-violence-pakistan",
     title: "Honour-Based Violence Pakistan",
-    metaTitle: "Honour-Based Violence Pakistan Expert Report UK | Women Asylum Evidence",
+    metaTitle: "Honour-Based Violence Pakistan Expert Report | Women Asylum Evidence",
     metaDescription:
-      "Honour-based violence Pakistan expert report for UK tribunals. Honour killings, forced marriage, police FIR failures, Particular Social Group, and internal relocation.",
+      "Honour-based violence Pakistan expert report for tribunals. Honour killings, forced marriage, police FIR failures, Particular Social Group, and internal relocation.",
     h1: "Honour-Based Violence Asylum Claims from Pakistan: Expert Report Evidence",
     content: [
       "Honour-based violence asylum claims from Pakistan require expert evidence on honour killings, forced marriage, domestic abuse, and deeply inconsistent state protection. Pakistan has enacted legislation against honour killings and domestic violence, but enforcement remains inadequate and police frequently refuse to register FIRs in honour violence cases.",
@@ -171,9 +171,9 @@ export const caseTypes: CaseType[] = [
   {
     slug: "deportation-removal-pakistan",
     title: "Deportation & Removal Pakistan",
-    metaTitle: "Deportation Removal Pakistan Expert Report UK | Risk on Return",
+    metaTitle: "Deportation Removal Pakistan Expert Report | Risk on Return",
     metaDescription:
-      "Deportation and removal Pakistan expert report for UK tribunals. Risk on return analysis, failed asylum seekers, state protection, and interim relief evidence.",
+      "Deportation and removal Pakistan expert report for tribunals. Risk on return analysis, failed asylum seekers, state protection, and interim relief evidence.",
     h1: "Deportation & Removal to Pakistan: Expert Report Evidence",
     content: [
       "Deportation and removal cases require expert evidence on risk on return, state protection, and internal relocation for Pakistani nationals. This includes appeals against deportation orders, judicial review of removal directions, interim relief applications, and risk assessments for failed asylum seekers.",
@@ -202,9 +202,9 @@ export const caseTypes: CaseType[] = [
   {
     slug: "fresh-claims-pakistan",
     title: "Fresh Claims Pakistan",
-    metaTitle: "Fresh Claims Pakistan Expert Report UK | New Evidence Reports",
+    metaTitle: "Fresh Claims Pakistan Expert Report | New Evidence Reports",
     metaDescription:
-      "Fresh claims Pakistan expert report for UK immigration cases. March 2025 Ahmadis CPIN, changed conditions, and updated country evidence reports.",
+      "Fresh claims Pakistan expert report for immigration cases. March 2025 Ahmadis CPIN, changed conditions, and updated country evidence reports.",
     h1: "Fresh Claims from Pakistan: Expert Report Evidence",
     content: [
       "Fresh claims require evidence that conditions in Pakistan have changed or that new evidence exists which was not previously considered. With the March 2025 Ahmadis CPIN Version 6.0 and ongoing political crackdowns since 2023, fresh claim evidence often addresses material changes since the original decision.",
@@ -233,13 +233,13 @@ export const caseTypes: CaseType[] = [
   {
     slug: "political-claim-pakistan",
     title: "Political Persecution Pakistan",
-    metaTitle: "Political Persecution Pakistan Expert Report UK | PTI & Journalists",
+    metaTitle: "Political Persecution Pakistan Expert Report | PTI & Journalists",
     metaDescription:
-      "Political persecution Pakistan expert report for UK tribunals. PTI supporters, journalists, enforced disappearances, Baloch nationalists, and 2025 conditions.",
+      "Political persecution Pakistan expert report for tribunals. PTI supporters, journalists, enforced disappearances, Baloch nationalists, and 2025 conditions.",
     h1: "Political Persecution Asylum Claims from Pakistan: Expert Report Evidence",
     content: [
-      "Political persecution asylum claims from Pakistan have increased significantly following the post-2023 crackdown on PTI supporters, journalists, human rights defenders, and Baloch nationalists. Expert reports assess the individual's political profile, visibility, and UK-based activities against current enforcement patterns by state and military intelligence agencies.",
-      "Expert reports address enforced disappearances, detention conditions, freedom of press restrictions, and whether individuals with UK diaspora political activity would attract Pakistani authority attention on return. Reports cite current country evidence and profile-specific risk analysis.",
+      "Political persecution asylum claims from Pakistan have increased significantly following the post-2023 crackdown on PTI supporters, journalists, human rights defenders, and Baloch nationalists. Expert reports assess the individual's political profile, visibility, and diaspora activities against current enforcement patterns by state and military intelligence agencies.",
+      "Expert reports address enforced disappearances, detention conditions, freedom of press restrictions, and whether individuals with diaspora political activity would attract Pakistani authority attention on return. Reports cite current country evidence and profile-specific risk analysis.",
       "Reports must distinguish between high-profile and low-profile political involvement, address geographic variation in risk including Balochistan, and analyse state protection availability for the specific appellant profile.",
     ],
     faqs: [

@@ -6,8 +6,8 @@ import { BRIEF_SUBMIT_LABEL } from "@/lib/constants";
 import { submitNetlifyForm } from "@/lib/submitNetlifyForm";
 
 const inputClass =
-  "w-full min-w-0 max-w-full border-0 border-b border-[#D0D4C8] bg-transparent px-0 py-3 text-base text-[#1B1F18] placeholder:text-[#3E4538]/45 focus:border-[#8B1E3F] focus:outline-none focus:ring-0 min-h-[44px]";
-const labelClass = "mb-1 block text-xs font-semibold uppercase tracking-[0.12em] text-[#4A5C3A]";
+  "w-full min-w-0 max-w-full border-0 border-b border-[#CCD1C5] bg-transparent px-0 py-3 text-base text-[#191D18] placeholder:text-[#3F433E]/45 focus:border-[#801F37] focus:outline-none focus:ring-0 min-h-[44px]";
+const labelClass = "mb-1 block text-xs font-semibold uppercase tracking-[0.12em] text-[#801F37]";
 
 export function ContactForm() {
   const router = useRouter();

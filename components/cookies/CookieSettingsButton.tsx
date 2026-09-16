@@ -12,8 +12,8 @@ export function CookieSettingsButton({ className = "", variant = "footer" }: Pro
 
   const base =
     variant === "footer"
-      ? "inline-flex min-h-[44px] items-center text-sm text-[#3E4538] hover:text-[#8B1E3F] focus:outline-none focus-visible:underline"
-      : "inline-flex min-h-[44px] items-center text-sm font-medium text-[#8B1E3F] hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B1E3F]";
+      ? "inline-flex min-h-[44px] items-center text-sm text-[#3F433E] hover:text-[#801F37] focus:outline-none focus-visible:underline"
+      : "inline-flex min-h-[44px] items-center text-sm font-medium text-[#801F37] hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-[#801F37]";
 
   return (
     <button type="button" onClick={openPreferences} className={`${base} ${className}`}>

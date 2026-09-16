@@ -4,7 +4,7 @@ export const faqs: FAQ[] = [
   {
     question: "What is a Pakistan expert report?",
     answer:
-      "A Pakistan expert report is an independent country condition report prepared by a qualified specialist for UK immigration tribunals and asylum appeals. It provides objective evidence on persecution risk, state protection, internal relocation, and profile-specific country conditions for Ahmadis, blasphemy accusees, Shia Muslims, women fleeing honour-based violence, LGBTQ+ claimants, political dissidents, and religious minorities. Reports comply with Immigration Tribunal Practice Direction paragraph 10.",
+      "A Pakistan expert report is an independent country condition report prepared by a qualified specialist for immigration tribunals and asylum appeals. It provides objective evidence on persecution risk, state protection, internal relocation, and profile-specific country conditions for Ahmadis, blasphemy accusees, Shia Muslims, women fleeing honour-based violence, LGBTQ+ claimants, political dissidents, and religious minorities. Reports comply with Immigration Tribunal Practice Direction paragraph 10.",
   },
   {
     question: "What is MN and Others (Ahmadis) [2012]?",
@@ -24,7 +24,7 @@ export const faqs: FAQ[] = [
   {
     question: "What verification does the Ahmadiyya Association UK provide?",
     answer:
-      "The Ahmadiyya Muslim Association UK provides verification of Ahmadi identity and community standing for UK asylum proceedings. This verification supports expert reports on Ahmadi persecution claims by confirming the appellant's status within the Ahmadi community. Solicitors should coordinate Ahmadiyya verification alongside expert report instruction for Ahmadi asylum appeals.",
+      "The Ahmadiyya Muslim Association UK provides verification of Ahmadi identity and community standing for asylum proceedings. This verification supports expert reports on Ahmadi persecution claims by confirming the appellant's status within the Ahmadi community. Solicitors should coordinate Ahmadiyya verification alongside expert report instruction for Ahmadi asylum appeals.",
   },
   {
     question: "Can women internally relocate in Pakistan?",
@@ -54,7 +54,7 @@ export const faqs: FAQ[] = [
   {
     question: "Which Pakistani asylum profiles most commonly require expert evidence?",
     answer:
-      "The highest-volume profiles include Ahmadi Muslims (the largest single Pakistan profile in UK asylum), blasphemy accusations, Shia Muslims facing sectarian violence, women fleeing honour-based violence and forced marriage, LGBTQ+ asylum under section 377 PPC, political persecution including PTI supporters and journalists, Christians and religious minorities, and failed asylum seekers facing risk on return.",
+      "The highest-volume profiles include Ahmadi Muslims (the largest single Pakistan profile in asylum), blasphemy accusations, Shia Muslims facing sectarian violence, women fleeing honour-based violence and forced marriage, LGBTQ+ asylum under section 377 PPC, political persecution including PTI supporters and journalists, Christians and religious minorities, and failed asylum seekers facing risk on return.",
   },
   {
     question: "How early should I instruct a Pakistan expert report?",

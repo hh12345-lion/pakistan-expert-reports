@@ -26,11 +26,11 @@ export const services: Service[] = [
     navLabel: "Country Condition Reports",
     description:
       "Comprehensive Pakistan country condition reports for asylum appeals, covering state protection, internal relocation, and profile-specific risk analysis.",
-    metaTitle: "Pakistan Country Condition Reports UK | Asylum Expert Evidence",
+    metaTitle: "Pakistan Country Condition Reports | Asylum Expert Evidence",
     metaDescription:
-      "CPR Part 35 Pakistan country condition reports for UK asylum and immigration tribunals. State protection, internal relocation, and profile-specific analysis.",
+      "CPR Part 35 Pakistan country condition reports for asylum and immigration tribunals. State protection, internal relocation, and profile-specific analysis.",
     content: [
-      "Pakistan country condition reports provide the independent, authoritative evidence UK immigration tribunals require to assess risk on return, state protection, and internal relocation for Pakistani asylum claimants.",
+      "Pakistan country condition reports provide the independent, authoritative evidence immigration tribunals require to assess risk on return, state protection, and internal relocation for Pakistani asylum claimants.",
       "Reports address the specific factual matrix of each case, citing Home Office CPINs, MN and Others (Ahmadis) [2012] UKUT 00389, UNHCR sources, and field research. All reports comply with Immigration Tribunal Practice Direction paragraph 10.",
     ],
     relatedHref: "/asylum-profiles/actors-of-protection-pakistan",
@@ -61,9 +61,9 @@ export const services: Service[] = [
     navLabel: "Ahmadi Asylum Reports",
     description:
       "Specialist reports on Ordinance XX 1984, TLP mobilisation, blasphemy charges, the March 2025 Ahmadi CPIN, and MN and Others [2012] country guidance.",
-    metaTitle: "Ahmadi Pakistan Asylum Expert Reports UK | Ordinance XX & CPIN",
+    metaTitle: "Ahmadi Pakistan Asylum Expert Reports | Ordinance XX & CPIN",
     metaDescription:
-      "Ahmadi Pakistan asylum expert reports for UK tribunals. Ordinance XX 1984, March 2025 CPIN Version 6.0, MN and Others [2012], TLP, and state protection analysis.",
+      "Ahmadi Pakistan asylum expert reports for tribunals. Ordinance XX 1984, March 2025 CPIN Version 6.0, MN and Others [2012], TLP, and state protection analysis.",
     content: [
       "Ahmadi asylum claims from Pakistan require specialist expert evidence on Ordinance XX 1984, constitutional and penal code restrictions, TLP mobilisation, and blasphemy accusations under sections 295 to 298 of the Pakistan Penal Code.",
       "Expert reports assess whether the appellant's specific profile creates a real risk beyond the general CPIN position, consistent with MN and Others (Ahmadis) Pakistan CG [2012] UKUT 00389 and the March 2025 Ahmadi CPIN Version 6.0.",
@@ -98,9 +98,9 @@ export const services: Service[] = [
     navLabel: "Blasphemy Expert Reports",
     description:
       "Expert evidence on blasphemy law misuse under ss295 to 298 PPC, mob violence, acquittal risk, and TLP mobilisation.",
-    metaTitle: "Pakistan Blasphemy Expert Reports UK | ss295-298 PPC Evidence",
+    metaTitle: "Pakistan Blasphemy Expert Reports | ss295-298 PPC Evidence",
     metaDescription:
-      "Pakistan blasphemy expert reports for UK tribunals. ss295 to 298 PPC, mob justice, acquittal risk, FIR misuse, and state protection analysis.",
+      "Pakistan blasphemy expert reports for tribunals. ss295 to 298 PPC, mob justice, acquittal risk, FIR misuse, and state protection analysis.",
     content: [
       "Blasphemy accusations in Pakistan are frequently weaponised in personal disputes, land conflicts, and sectarian campaigns. Sections 295 to 298 of the Pakistan Penal Code carry severe penalties, and acquittal does not guarantee safety from mob violence or retaliatory prosecution.",
       "Expert reports assess the appellant's specific profile, including prior FIRs, public accusations, and community hostility, against current enforcement patterns and the limited availability of effective state protection.",
@@ -135,9 +135,9 @@ export const services: Service[] = [
     navLabel: "Honour-Based Violence Reports",
     description:
       "Expert evidence on honour killing, watta satta, jirga decisions, and state protection for women and girls at risk.",
-    metaTitle: "Pakistan Honour-Based Violence Expert Reports UK | HBV Evidence",
+    metaTitle: "Pakistan Honour-Based Violence Expert Reports | HBV Evidence",
     metaDescription:
-      "Honour-based violence Pakistan expert reports for UK tribunals. Honour killing, watta satta, jirga, internal relocation for women, and state protection analysis.",
+      "Honour-based violence Pakistan expert reports for tribunals. Honour killing, watta satta, jirga, internal relocation for women, and state protection analysis.",
     content: [
       "Honour-based violence in Pakistan encompasses honour killing, forced marriage, watta satta exchange marriages, and jirga-imposed punishments. Women who resist family control, seek independence, or are perceived to have damaged family honour face serious risk from family and community actors.",
       "Expert reports provide locality-specific analysis of HBV prevalence, police and court responses, shelter availability, and whether internal relocation within Pakistan is safe and reasonable for the individual appellant.",
@@ -172,9 +172,9 @@ export const services: Service[] = [
     navLabel: "LGBTQ+ Asylum Reports",
     description:
       "Specialist reports on s377 Pakistan Penal Code, khawaja sira communities, social attitudes, and state protection under the HJ (Iran) standard.",
-    metaTitle: "LGBTQ+ Pakistan Asylum Expert Reports UK | s377 & HJ (Iran)",
+    metaTitle: "LGBTQ+ Pakistan Asylum Expert Reports | s377 & HJ (Iran)",
     metaDescription:
-      "LGBTQ+ Pakistan asylum expert reports for UK tribunals. s377 PPC, khawaja sira, HJ (Iran) [2010] standard, and internal relocation analysis.",
+      "LGBTQ+ Pakistan asylum expert reports for tribunals. s377 PPC, khawaja sira, HJ (Iran) [2010] standard, and internal relocation analysis.",
     content: [
       "LGBTQ+ asylum claims from Pakistan require specialist expert evidence on section 377 of the Pakistan Penal Code, Sharia-influenced social attitudes, police harassment, and violence from family and non-state actors.",
       "Expert reports assess whether the appellant's specific profile creates a real risk that goes beyond general country conditions, consistent with the HJ (Iran) [2010] UKSC 31 standard on sexuality and the well-founded fear test.",
@@ -209,16 +209,16 @@ export const services: Service[] = [
     navLabel: "Political Persecution Reports",
     description:
       "Profile-specific risk assessment for PTI supporters, political activists, journalists, and critics facing arrest, detention, or enforced disappearance.",
-    metaTitle: "Pakistan Political Persecution Expert Reports UK | PTI Risk",
+    metaTitle: "Pakistan Political Persecution Expert Reports | PTI Risk",
     metaDescription:
-      "Political persecution Pakistan expert reports for UK tribunals. PTI supporters, enforced disappearances, arrest risk, and state protection analysis.",
+      "Political persecution Pakistan expert reports for tribunals. PTI supporters, enforced disappearances, arrest risk, and state protection analysis.",
     content: [
       "Political persecution claims from Pakistan frequently involve PTI supporters, activists, journalists, and critics of the military establishment. Since 2022, large-scale arrests, detention, and enforced disappearances have targeted political opposition figures and their supporters.",
-      "Expert reports assess the individual's profile, including UK diaspora activity, social media presence, and prior detention, against current enforcement patterns and the availability of effective state protection.",
+      "Expert reports assess the individual's profile, including diaspora activity, social media presence, and prior detention, against current enforcement patterns and the availability of effective state protection.",
     ],
     relatedHref: "/asylum-profiles/political-persecution-pakistan",
     methodology: [
-      { phase: "Profile analysis", whatWeDo: "Assess political affiliation, visibility, and UK activity", deliverable: "Political risk profile summary" },
+      { phase: "Profile analysis", whatWeDo: "Assess political affiliation, visibility, and diaspora activity", deliverable: "Political risk profile summary" },
       { phase: "Country research", whatWeDo: "Current arrest patterns, detention conditions, enforced disappearances", deliverable: "Country conditions analysis" },
       { phase: "Report", whatWeDo: "Profile-specific risk on return assessment", deliverable: "Tribunal-ready expert report" },
     ],
@@ -246,9 +246,9 @@ export const services: Service[] = [
     navLabel: "CPIN Challenge Reports",
     description:
       "Independent analysis challenging Home Office CPIN findings with field research and profile-specific assessment beyond generic CPIN positions.",
-    metaTitle: "Pakistan CPIN Challenge Expert Reports UK | Independent Analysis",
+    metaTitle: "Pakistan CPIN Challenge Expert Reports | Independent Analysis",
     metaDescription:
-      "Challenge Home Office Pakistan CPIN findings with independent expert reports. Field research, updated evidence, and profile-specific analysis for UK tribunals.",
+      "Challenge Home Office Pakistan CPIN findings with independent expert reports. Field research, updated evidence, and profile-specific analysis for tribunals.",
     content: [
       "CPIN challenge reports provide independent analysis where the Home Office CPIN position does not reflect the appellant's specific profile or where country conditions have materially changed.",
       "Common challenge areas include the March 2025 Ahmadi CPIN (Version 6.0), actors of protection, internal relocation for women, political opposition risk, and blasphemy acquittal safety.",
@@ -283,7 +283,7 @@ export const services: Service[] = [
     navLabel: "Oral Evidence",
     description:
       "Tribunal attendance and oral evidence for country guidance cases, Upper Tribunal proceedings, and directed expert attendance.",
-    metaTitle: "Pakistan Expert Report Oral Evidence UK | Tribunal Attendance",
+    metaTitle: "Pakistan Expert Report Oral Evidence | Tribunal Attendance",
     metaDescription:
       "Pakistan expert report oral evidence and tribunal attendance for country guidance cases, Upper Tribunal proceedings, and directed expert evidence.",
     content: [

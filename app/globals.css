@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-ink: #1b1f18;
-  --color-accent: #8b1e3f;
-  --color-highlight: #4a5c3a;
-  --color-section-alt: #e6e9df;
-  --color-border: #d0d4c8;
-  --color-body: #3e4538;
-  --color-paper: #f4f6f1;
+  --color-ink: #191d18;
+  --color-accent: #801f37;
+  --color-highlight: #801f37;
+  --color-section-alt: #e2e6db;
+  --color-border: #ccd1c5;
+  --color-body: #3f433e;
+  --color-paper: #f2f5ef;
   --font-sans: var(--font-source);
-  --font-display: var(--font-alegreya);
+  --font-display: Georgia, "Times New Roman", serif;
   --breakpoint-xs: 375px;
 }
 
@@ -18,8 +18,8 @@ html {
 }
 
 body {
-  background: #f4f6f1;
-  color: #3e4538;
+  background: #f2f5ef;
+  color: #3f433e;
   font-family: var(--font-source), system-ui, sans-serif;
   overflow-x: hidden;
   min-width: 320px;
@@ -31,7 +31,7 @@ h1,
 h2,
 h3,
 .font-display {
-  font-family: var(--font-alegreya), Georgia, serif;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 img,
@@ -63,27 +63,27 @@ section {
 }
 
 .folio-rail {
-  background: #1b1f18;
+  background: #191d18;
 }
 
 .folio-rule {
-  background-image: linear-gradient(#d0d4c8, #d0d4c8);
+  background-image: linear-gradient(#ccd1c5, #ccd1c5);
   background-size: 100% 1px;
   background-repeat: no-repeat;
   background-position: 0 100%;
 }
 
 .prose-folio h2 {
-  font-family: var(--font-alegreya), Georgia, serif;
-  color: #1b1f18;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #191d18;
   font-size: 1.45rem;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
 
 .prose-folio h3 {
-  font-family: var(--font-alegreya), Georgia, serif;
-  color: #1b1f18;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #191d18;
   font-size: 1.15rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
@@ -92,11 +92,11 @@ section {
 .prose-folio p,
 .prose-folio li {
   line-height: 1.75;
-  color: #3e4538;
+  color: #3f433e;
 }
 
 .prose-folio a {
-  color: #8b1e3f;
+  color: #801f37;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -106,8 +106,8 @@ section {
   min-height: 44px;
   align-items: center;
   justify-content: center;
-  background: #8b1e3f;
-  color: #f4f6f1;
+  background: #801f37;
+  color: #f2f5ef;
   padding: 0.75rem 1.35rem;
   font-size: 0.8125rem;
   font-weight: 600;
@@ -117,7 +117,7 @@ section {
 }
 
 .btn-brief:hover {
-  background: #6e1732;
+  background: #65182c;
 }
 
 .btn-ghost {

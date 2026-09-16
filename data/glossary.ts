@@ -8,7 +8,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Ahmadiyya Muslim Association UK",
     definition:
-      "The UK branch of the Ahmadiyya Muslim community, which can provide verification of Ahmadi identity and membership for asylum proceedings. Verification is separate from independent expert country conditions evidence.",
+      "The British branch of the Ahmadiyya Muslim community, which can provide verification of Ahmadi identity and membership for asylum proceedings. Verification is separate from independent expert country conditions evidence.",
     link: "/guides/ahmadi-asylum-pakistan-guide",
   },
   {
@@ -26,7 +26,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "CPIN (Country Policy Information Note)",
     definition:
-      "Home Office country guidance documents setting out the UK government's position on country conditions for asylum decision-making.",
+      "Home Office country guidance documents setting out the Home Office's position on country conditions for asylum decision-making.",
     link: "/cpin-country-guidance",
   },
   {
@@ -44,7 +44,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Expert Report",
     definition:
-      "An independent country condition report prepared by a qualified specialist for UK immigration tribunals, addressing profile-specific risk, state protection, internal relocation, and current CPIN positions under Immigration Tribunal Practice Direction paragraph 10.",
+      "An independent country condition report prepared by a qualified specialist for immigration tribunals, addressing profile-specific risk, state protection, internal relocation, and current CPIN positions under Immigration Tribunal Practice Direction paragraph 10.",
     link: "/what-is-a-pakistan-expert-report",
   },
   {
@@ -56,7 +56,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "HJ (Iran) [2010]",
     definition:
-      "Leading UK Supreme Court case establishing that asylum claims based on sexuality must be assessed without requiring the claimant to conceal their identity or live discreetly.",
+      "Leading Supreme Court case establishing that asylum claims based on sexuality must be assessed without requiring the claimant to conceal their identity or live discreetly.",
     link: "/asylum-profiles/lgbtq-asylum-pakistan",
   },
   {

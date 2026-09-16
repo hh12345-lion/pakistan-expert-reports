@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Pakistan Expert Reports - Pakistan Expert Report Services UK";
+export const alt = "Pakistan Expert Reports - Pakistan Expert Report Services";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -14,7 +14,7 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "flex-end",
-          backgroundColor: "#1B1F18",
+          backgroundColor: "#191D18",
           padding: 72,
         }}
       >
@@ -22,19 +22,19 @@ export default function OpenGraphImage() {
           style={{
             fontSize: 20,
             fontWeight: 600,
-            color: "#A8B39A",
+            color: "#A8AEA3",
             letterSpacing: "0.18em",
             textTransform: "uppercase",
           }}
         >
-          UK tribunal folio
+          Tribunal folio
         </div>
         <div
           style={{
             marginTop: 20,
             fontSize: 56,
             fontWeight: 700,
-            color: "#F4F6F1",
+            color: "#F2F5EF",
             letterSpacing: "-0.02em",
             lineHeight: 1.1,
             maxWidth: 900,
@@ -52,7 +52,7 @@ export default function OpenGraphImage() {
             maxWidth: 820,
           }}
         >
-          Country expert evidence for UK immigration & asylum tribunals
+          Country expert evidence for immigration and asylum tribunals
         </p>
       </div>
     ),

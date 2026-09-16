@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SITE_URL } from "./constants";
 import { isProductionSite } from "./seo/is-production";
 
-const OG_IMAGE_ALT = "Pakistan Expert Reports - Pakistan Country Expert Reports UK";
+const OG_IMAGE_ALT = "Pakistan Expert Reports - Pakistan Country Expert Reports";
 
 export const OPEN_GRAPH_IMAGE = {
   url: `${SITE_URL}/opengraph-image`,

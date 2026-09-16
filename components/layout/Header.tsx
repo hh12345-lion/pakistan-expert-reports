@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { BRIEF_LABEL, BRIEF_PATH, SITE_NAME } from "@/lib/constants";
+import { BrandLogo } from "@/components/brand/BrandLogo";
+import { BRIEF_LABEL, BRIEF_PATH } from "@/lib/constants";
 
 const railLinks = [
   { href: "/#evidence", label: "Evidence" },
@@ -31,7 +32,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className="folio-rail z-50 text-[#F4F6F1] lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-56 lg:shrink-0 lg:flex-col lg:justify-between lg:self-start">
+    <header className="folio-rail z-50 text-[#F2F5EF] lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-56 lg:shrink-0 lg:flex-col lg:justify-between lg:self-start">
       <input
         ref={toggleRef}
         id="mobile-nav-toggle"
@@ -42,11 +43,14 @@ export function Header() {
 
       <div className="header-bar flex items-center justify-between gap-3 px-4 py-3 lg:flex-col lg:items-stretch lg:px-5 lg:py-8">
         <Link href="/" className="min-w-0" onClick={closeMobileMenu}>
-          <span className="block font-display text-lg font-semibold leading-tight tracking-tight lg:text-xl">
-            {SITE_NAME}
+          <span className="hidden lg:block">
+            <BrandLogo variant="inverse" size="sm" className="max-w-full" />
           </span>
-          <span className="mt-1 hidden text-[10px] uppercase tracking-[0.18em] text-[#A8B39A] lg:block">
-            UK tribunal folio
+          <span className="flex items-center gap-2 lg:hidden">
+            <BrandLogo variant="mono-white" size="sm" />
+            <span className="font-display text-base font-semibold leading-tight tracking-tight text-[#F2F5EF]">
+              Pakistan Expert Reports
+            </span>
           </span>
         </Link>
 
@@ -55,7 +59,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="inline-flex min-h-[40px] items-center border-l border-transparent pl-3 text-sm text-[#F4F6F1]/70 transition hover:border-[#8B1E3F] hover:text-white"
+              className="inline-flex min-h-[40px] items-center border-l border-transparent pl-3 text-sm text-[#F2F5EF]/70 transition hover:border-[#801F37] hover:text-white"
             >
               {link.label}
             </Link>
@@ -96,7 +100,7 @@ export function Header() {
               <Link
                 href={link.href}
                 onClick={closeMobileMenu}
-                className="inline-flex min-h-[44px] w-full items-center text-sm text-[#F4F6F1]/80"
+                className="inline-flex min-h-[44px] w-full items-center text-sm text-[#F2F5EF]/80"
               >
                 {link.label}
               </Link>

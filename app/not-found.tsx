@@ -5,9 +5,9 @@ export default function NotFound() {
   return (
     <section className="px-4 py-16 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-xl">
-        <p className="font-display text-6xl font-semibold text-[#8B1E3F]">404</p>
-        <h1 className="mt-4 font-display text-3xl font-semibold text-[#1B1F18]">Page not found</h1>
-        <p className="mt-4 leading-relaxed text-[#3E4538]">
+        <p className="font-display text-6xl font-semibold text-[#801F37]">404</p>
+        <h1 className="mt-4 font-display text-3xl font-semibold text-[#191D18]">Page not found</h1>
+        <p className="mt-4 leading-relaxed text-[#3F433E]">
           That address is no longer a separate page. Country evidence, profiles, and process now live on the landing
           folio.
         </p>
@@ -15,10 +15,10 @@ export default function NotFound() {
           <Link href="/" className="btn-brief">
             Home
           </Link>
-          <Link href={BRIEF_PATH} className="btn-ghost text-[#1B1F18]">
+          <Link href={BRIEF_PATH} className="btn-ghost text-[#191D18]">
             {BRIEF_LABEL}
           </Link>
-          <Link href="/faq" className="btn-ghost text-[#1B1F18]">
+          <Link href="/faq" className="btn-ghost text-[#191D18]">
             Questions
           </Link>
         </div>

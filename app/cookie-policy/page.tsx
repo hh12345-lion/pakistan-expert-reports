@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata = createMetadata({
   title: "Cookie Policy | Pakistan Expert Reports",
   description:
-    "How pakistanexpertreports.com uses cookies and similar technologies, your choices under UK GDPR and ePrivacy, and how to manage preferences.",
+    "How pakistanexpertreports.com uses cookies and similar technologies, your choices under GDPR and ePrivacy, and how to manage preferences.",
   path: "/cookie-policy",
   noindex: true,
   follow: true,
@@ -24,7 +24,7 @@ export default function CookiePolicyPage() {
         <p className="text-[#3D4654] leading-relaxed">
           This Cookie Policy explains how Pakistan Expert Reports (&quot;we&quot;, &quot;us&quot;) uses cookies and
           similar technologies when you visit our website. It should be read alongside our Privacy Policy. We comply with
-          the UK GDPR, the Privacy and Electronic Communications Regulations (PECR), and apply CCPA-aligned transparency
+          GDPR, the Privacy and Electronic Communications Regulations (PECR), and apply CCPA-aligned transparency
           where relevant to California visitors.
         </p>
 
@@ -69,7 +69,7 @@ export default function CookiePolicyPage() {
           <li>Hotjar (analytics / experience)</li>
         </ul>
         <p className="mt-4 text-sm text-[#3D4654]">
-          These providers may process data outside the UK. We use Google Consent Mode so tags respect your choices before
+          These providers may process data outside the jurisdiction. We use Google Consent Mode so tags respect your choices before
           data is collected.
         </p>
 
@@ -89,7 +89,7 @@ export default function CookiePolicyPage() {
         <h2 className="mt-10 text-xl font-bold text-[#1A2740]">Contact</h2>
         <p className="mt-4 text-[#3D4654] leading-relaxed">
           Questions about this policy: use the{" "}
-          <Link href={BRIEF_PATH} className="text-[#8B1E3F] hover:underline">
+          <Link href={BRIEF_PATH} className="text-[#801F37] hover:underline">
             brief form
           </Link>
           .

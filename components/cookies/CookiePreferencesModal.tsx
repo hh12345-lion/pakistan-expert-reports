@@ -23,13 +23,13 @@ function CategoryToggle({
   const meta = CATEGORY_META[category];
 
   return (
-    <li className="border border-[#D0D4C8] bg-white p-4">
+    <li className="border border-[#CCD1C5] bg-white p-4">
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
-          <p className="font-semibold text-[#1B1F18]">{meta.label}</p>
-          <p className="mt-1 text-sm leading-relaxed text-[#3E4538]">{meta.description}</p>
+          <p className="font-semibold text-[#191D18]">{meta.label}</p>
+          <p className="mt-1 text-sm leading-relaxed text-[#3F433E]">{meta.description}</p>
           {meta.required && (
-            <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#4A5C3A]">Always active</p>
+            <p className="mt-2 text-xs font-medium uppercase tracking-wide text-[#801F37]">Always active</p>
           )}
         </div>
         <label className="relative inline-flex shrink-0 cursor-pointer items-center">
@@ -44,8 +44,8 @@ function CategoryToggle({
           <span
             className={`relative block h-7 w-12 rounded-full transition-colors duration-200 ${
               meta.required
-                ? "bg-[#1B1F18]/35"
-                : "bg-[#D0D4C8] peer-focus-visible:ring-2 peer-focus-visible:ring-[#8B1E3F] peer-focus-visible:ring-offset-2 peer-checked:bg-[#4A5C3A]"
+                ? "bg-[#191D18]/35"
+                : "bg-[#CCD1C5] peer-focus-visible:ring-2 peer-focus-visible:ring-[#801F37] peer-focus-visible:ring-offset-2 peer-checked:bg-[#801F37]"
             }`}
             aria-hidden
           >
@@ -131,7 +131,7 @@ export function CookiePreferencesModal() {
     >
       <button
         type="button"
-        className="absolute inset-0 bg-[#1B1F18]/60 animate-[fadeIn_0.2s_ease-out]"
+        className="absolute inset-0 bg-[#191D18]/60 animate-[fadeIn_0.2s_ease-out]"
         aria-label="Close cookie preferences"
         onClick={closePreferences}
       />
@@ -140,22 +140,22 @@ export function CookiePreferencesModal() {
         role="dialog"
         aria-modal="true"
         aria-labelledby="cookie-prefs-title"
-        className="relative z-10 flex max-h-[min(90vh,640px)] w-full max-w-lg flex-col overflow-hidden border border-[#D0D4C8] bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)] animate-[slideUp_0.35s_cubic-bezier(0.16,1,0.3,1)] sm:animate-[fadeIn_0.25s_ease-out]"
+        className="relative z-10 flex max-h-[min(90vh,640px)] w-full max-w-lg flex-col overflow-hidden border border-[#CCD1C5] bg-white shadow-[0_20px_60px_rgba(0,0,0,0.25)] animate-[slideUp_0.35s_cubic-bezier(0.16,1,0.3,1)] sm:animate-[fadeIn_0.25s_ease-out]"
       >
-        <div className="border-b border-[#D0D4C8] bg-[#1B1F18] px-5 py-4 sm:px-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#A8B39A]">Cookie settings</p>
+        <div className="border-b border-[#CCD1C5] bg-[#191D18] px-5 py-4 sm:px-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#A8AEA3]">Cookie settings</p>
           <h2 id="cookie-prefs-title" className="mt-1 font-display text-lg font-semibold text-white">
             Customize your preferences
           </h2>
           <p className="mt-1 text-sm text-white/75">
             Choose which cookies we may use.{" "}
-            <Link href="/cookie-policy" className="text-[#A8B39A] hover:underline" onClick={closePreferences}>
+            <Link href="/cookie-policy" className="text-[#A8AEA3] hover:underline" onClick={closePreferences}>
               Cookie Policy
             </Link>
           </p>
         </div>
 
-        <div className="flex-1 overflow-y-auto bg-[#E6E9DF] px-5 py-4 sm:px-6">
+        <div className="flex-1 overflow-y-auto bg-[#E2E6DB] px-5 py-4 sm:px-6">
           <ul className="space-y-3">
             {CATEGORIES.map((key) => (
               <CategoryToggle
@@ -168,33 +168,33 @@ export function CookiePreferencesModal() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-[#D0D4C8] bg-white p-4 sm:flex-row sm:flex-wrap sm:justify-end">
+        <div className="flex flex-col gap-2 border-t border-[#CCD1C5] bg-white p-4 sm:flex-row sm:flex-wrap sm:justify-end">
           <button
             type="button"
             ref={closeBtnRef}
             onClick={closePreferences}
-            className="min-h-[44px] border border-[#D0D4C8] px-4 py-2 text-sm font-medium text-[#3E4538] transition hover:bg-[#E6E9DF]"
+            className="min-h-[44px] border border-[#CCD1C5] px-4 py-2 text-sm font-medium text-[#3F433E] transition hover:bg-[#E2E6DB]"
           >
             Cancel
           </button>
           <button
             type="button"
             onClick={rejectNonEssential}
-            className="min-h-[44px] border border-[#1B1F18] px-4 py-2 text-sm font-semibold text-[#1B1F18] transition hover:bg-[#E6E9DF]"
+            className="min-h-[44px] border border-[#191D18] px-4 py-2 text-sm font-semibold text-[#191D18] transition hover:bg-[#E2E6DB]"
           >
             Reject Non-Essential
           </button>
           <button
             type="button"
             onClick={() => savePreferences(draft)}
-            className="min-h-[44px] bg-[#1B1F18] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#12150F]"
+            className="min-h-[44px] bg-[#191D18] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0F120E]"
           >
             Save Preferences
           </button>
           <button
             type="button"
             onClick={acceptAll}
-            className="min-h-[44px] bg-[#8B1E3F] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#6e1732]"
+            className="min-h-[44px] bg-[#801F37] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#65182c]"
           >
             Accept All
           </button>

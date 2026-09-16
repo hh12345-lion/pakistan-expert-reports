@@ -6,7 +6,7 @@ export type ProfileGeoBlock =
 const ahmadiGeo: ProfileGeoBlock[] = [
   {
     type: "table",
-    caption: "Ahmadi legal position under Ordinance XX 1984 (summary for UK tribunals)",
+    caption: "Ahmadi legal position under Ordinance XX 1984 (summary for tribunals)",
     headers: ["Restriction", "Legal basis", "Risk on return"],
     rows: [
       ["Cannot call themselves Muslim", "Ordinance XX 1984", "Blasphemy charges, mob violence"],

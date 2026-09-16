@@ -26,7 +26,7 @@ export const guides: Guide[] = [
       {
         heading: "MN and Others [2012] and the March 2025 CPIN",
         content: [
-          "MN and Others (Ahmadis - country conditions) Pakistan CG [2012] UKUT 00389 remains the leading country guidance for Ahmadi asylum claims in UK tribunals. Solicitors should address how the appellant's circumstances align with or depart from the guidance framework established in that decision.",
+          "MN and Others (Ahmadis - country conditions) Pakistan CG [2012] UKUT 00389 remains the leading country guidance for Ahmadi asylum claims in tribunals. Solicitors should address how the appellant's circumstances align with or depart from the guidance framework established in that decision.",
           "The March 2025 Ahmadis CPIN Version 6.0 confirms that while the state is able to protect Ahmadis in principle, it is generally unwilling to do so. Police are complicit in harassment, judges are reluctant to decide blasphemy cases due to fear of retribution, and expert reports must assess the individual appellant's profile and visibility against these confirmed conditions.",
         ],
       },
@@ -57,7 +57,7 @@ export const guides: Guide[] = [
       {
         heading: "Blasphemy Laws and Widespread Misuse",
         content: [
-          "Pakistan's blasphemy laws under ss295 to 298 of the Pakistan Penal Code are among the most frequently cited persecution grounds in UK asylum tribunals. Section 295-C carries the death penalty for blasphemy against the Prophet Muhammad. Laws are widely misused to settle personal disputes, target religious minorities including Ahmadis and Christians, and suppress dissent.",
+          "Pakistan's blasphemy laws under ss295 to 298 of the Pakistan Penal Code are among the most frequently cited persecution grounds in asylum tribunals. Section 295-C carries the death penalty for blasphemy against the Prophet Muhammad. Laws are widely misused to settle personal disputes, target religious minorities including Ahmadis and Christians, and suppress dissent.",
           "Expert reports analyse the specific circumstances of the blasphemy accusation, the motives of the accuser, the appellant's profile, and whether the accusation arose from genuine religious offence or personal enmity. This contextual analysis is essential for tribunals assessing credibility and risk on return.",
         ],
       },
@@ -88,7 +88,7 @@ export const guides: Guide[] = [
     slug: "pakistan-cpin-guide",
     metaTitle: "Pakistan CPINs 2025: Solicitor's Guide to Country Guidance",
     metaDescription:
-      "Current Home Office CPINs on Pakistan for UK asylum solicitors. Ahmadis March 2025, Shia Muslims, blasphemy, actors of protection, and challenging CPIN findings.",
+      "Current Home Office CPINs on Pakistan for asylum solicitors. Ahmadis March 2025, Shia Muslims, blasphemy, actors of protection, and challenging CPIN findings.",
     h1: "Pakistan CPINs 2025: A Solicitor's Guide to Current Country Guidance",
     aboutServiceId: "cpin-challenge",
     sections: [
@@ -224,7 +224,7 @@ export const guides: Guide[] = [
         heading: "Legal Aid Prior Authority",
         content: [
           "Most Pakistan expert reports in asylum proceedings are Legal Aid funded. LAA prior authority is required before instruction. Typical LAA-approved rates are £50 to £100 per hour for report preparation, with fixed fee reports also available.",
-          "Apply for prior authority as soon as the need for expert evidence is identified. Include the expert's CV, proposed scope, and estimated cost. Pakistan is the second-highest asylum nationality in the UK, and expert evidence is frequently required in Ahmadi, blasphemy, and honour-based violence appeals.",
+          "Apply for prior authority as soon as the need for expert evidence is identified. Include the expert's CV, proposed scope, and estimated cost. Pakistan is among the highest-volume asylum nationalities, and expert evidence is frequently required in Ahmadi, blasphemy, and honour-based violence appeals.",
         ],
       },
       {
