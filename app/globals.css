@@ -101,6 +101,60 @@ section {
   text-underline-offset: 3px;
 }
 
+.blog-prose h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #191d18;
+  font-size: 1.45rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-prose h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #191d18;
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-prose p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  color: #3f433e;
+}
+
+.blog-prose ul,
+.blog-prose ol {
+  margin-bottom: 1rem;
+  padding-left: 1.4rem;
+  color: #3f433e;
+}
+
+.blog-prose ul {
+  list-style: disc;
+}
+
+.blog-prose ol {
+  list-style: decimal;
+}
+
+.blog-prose li {
+  margin-bottom: 0.35rem;
+  line-height: 1.7;
+}
+
+.blog-prose a {
+  color: #801f37;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.blog-prose strong {
+  color: #191d18;
+  font-weight: 600;
+}
+
 .btn-brief {
   display: inline-flex;
   min-height: 44px;

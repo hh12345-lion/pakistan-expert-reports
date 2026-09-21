@@ -17,6 +17,12 @@ export function Footer() {
           <span className="text-[#CCD1C5]" aria-hidden>
             /
           </span>
+          <Link href="/blog" className="inline-flex min-h-[44px] items-center px-2 hover:text-[#801F37]">
+            Blog
+          </Link>
+          <span className="text-[#CCD1C5]" aria-hidden>
+            /
+          </span>
           <Link href="/faq" className="inline-flex min-h-[44px] items-center px-2 hover:text-[#801F37]">
             Questions
           </Link>

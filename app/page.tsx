@@ -182,7 +182,11 @@ export default function HomePage() {
           </h2>
           <p className="mt-4 leading-relaxed">
             A solicitor-facing map of the authorities that actually move Pakistani appeals, and where expert evidence
-            typically goes beyond the CPIN extract.
+            typically goes beyond the CPIN extract.{" "}
+            <Link href="/blog/what-solicitors-should-check-evidence-after-cpin-changes" className="font-medium text-[#801F37] underline-offset-2 hover:underline">
+              What to check after the 2026 CPIN updates
+            </Link>
+            .
           </p>
           <div className="table-scroll mt-8">
             <table className="w-full min-w-[28rem] text-left text-sm">

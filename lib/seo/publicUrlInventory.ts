@@ -1,4 +1,5 @@
 import { SITE_URL } from "../constants";
+import { getAllBlogPosts } from "../blog";
 
 export type PublicUrlEntry = {
   path: string;
@@ -10,6 +11,7 @@ export type PublicUrlEntry = {
 export const APP_STATIC_PATHS: PublicUrlEntry[] = [
   { path: "/", priority: 1.0, changefreq: "weekly" },
   { path: "/faq", priority: 0.8, changefreq: "monthly" },
+  { path: "/blog", priority: 0.85, changefreq: "weekly" },
 ];
 
 export const NON_INDEXABLE_PATHS = [
@@ -39,7 +41,14 @@ export type PublicUrlInventory = {
 
 export function buildPublicUrlInventory(siteUrl: string = SITE_URL): PublicUrlInventory {
   const origin = siteUrl.replace(/\/$/, "");
-  const entries = [...APP_STATIC_PATHS];
+  const entries = [
+    ...APP_STATIC_PATHS,
+    ...getAllBlogPosts().map((post) => ({
+      path: `/blog/${post.slug}`,
+      priority: 0.8,
+      changefreq: "monthly" as const,
+    })),
+  ];
   const allPaths = entries.map((e) => e.path);
   const allUrls = allPaths.map((p) => (p === "/" ? origin : `${origin}${p}`));
   return { siteUrl: origin, entries, allPaths, allUrls };

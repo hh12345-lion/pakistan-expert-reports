@@ -11,6 +11,62 @@
 
 const BRAND_NAME = "Pakistan Expert Reports";
 
+function getSiteDomain() {
+  const raw = process.env.NEXT_PUBLIC_SITE_URL || "https://pakistanexpertreports.com";
+  try {
+    return new URL(raw).hostname.replace(/^www\./, "");
+  } catch {
+    return "pakistanexpertreports.com";
+  }
+}
+
+/** Map this site's brief note, and common aliases, onto lowercase `message`. */
+function resolveLeadMessage(body) {
+  if (!body || typeof body !== "object") return "";
+  const keys = [
+    "message",
+    "summary",
+    "caseBrief",
+    "caseSummary",
+    "description",
+    "notes",
+    "brief",
+    "case_summary",
+    "caseDescription",
+  ];
+  for (const key of keys) {
+    if (body[key] != null && String(body[key]).trim()) return String(body[key]).trim();
+  }
+  return "";
+}
+
+async function notifyLead(body, fields) {
+  const webhookUrl =
+    process.env.Lead_notification_url || process.env.LEAD_NOTIFICATION_URL;
+  if (!webhookUrl) return;
+
+  const payload = {
+    "Full Name": fields.fullName,
+    Email: fields.email,
+    "Phone Number": sanitize(body.phone ?? ""),
+    "Brand name": BRAND_NAME,
+    domain: getSiteDomain(),
+    message: sanitize(resolveLeadMessage(body)),
+  };
+
+  try {
+    const res = await fetch(webhookUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(12_000),
+    });
+    if (!res.ok) console.error("Lead webhook status", res.status);
+  } catch (error) {
+    console.error("Lead webhook failed:", error?.message);
+  }
+}
+
 /** Column order = sheet columns A…  Header text is what appears in row 1. */
 export const BRIEF_COLUMNS = [
   { key: "timestamp", header: "Timestamp" },
@@ -176,6 +232,7 @@ export async function handler(event) {
 
   try {
     const updatedRange = await appendBriefToSheet(fields);
+    await notifyLead(body, fields);
     return json(200, { ok: true, columns: BRIEF_HEADERS, updatedRange });
   } catch (error) {
     console.error("submit-brief sheet write failed:", error?.message);

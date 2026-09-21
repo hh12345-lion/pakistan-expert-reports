@@ -30,6 +30,7 @@ export function ContactForm() {
       deadline: "",
       urgency: "",
       summary: String(data.get("summary") ?? "").trim(),
+      message: String(data.get("summary") ?? "").trim(),
     };
 
     try {

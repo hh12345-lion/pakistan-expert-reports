@@ -12,6 +12,7 @@ const railLinks = [
   { href: "/#process", label: "Process" },
   { href: "/#cpin", label: "CPIN" },
   { href: "/faq", label: "Questions" },
+  { href: "/blog", label: "Blog" },
 ] as const;
 
 export function Header() {

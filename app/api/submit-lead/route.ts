@@ -22,8 +22,28 @@ type LeadBody = {
   organisation?: string;
   law_firm?: string;
   email?: string;
+  phone?: string;
   summary?: string;
+  message?: string;
 };
+
+/** Map this site's brief note, and common aliases, onto lowercase `message`. */
+function resolveLeadMessage(body: Record<string, unknown>): string {
+  const keys = [
+    "message",
+    "summary",
+    "caseBrief",
+    "caseSummary",
+    "description",
+    "notes",
+    "brief",
+  ];
+  for (const key of keys) {
+    const value = body[key];
+    if (value != null && String(value).trim()) return String(value).trim();
+  }
+  return "";
+}
 
 function sanitize(str: string): string {
   return str.replace(/<[^>]*>/g, "").trim();
@@ -91,9 +111,10 @@ export async function POST(request: Request) {
         body: JSON.stringify({
           "Full Name": fullName,
           Email: email,
-          "Phone Number": "",
+          "Phone Number": sanitize(body.phone ?? ""),
           "Brand name": BRAND_NAME,
           domain: getSiteDomain(),
+          message: sanitize(resolveLeadMessage(body as Record<string, unknown>)),
         }),
       });
     } catch (error) {
