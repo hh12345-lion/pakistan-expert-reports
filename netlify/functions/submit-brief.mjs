@@ -25,14 +25,30 @@ function resolveLeadMessage(body) {
   if (!body || typeof body !== "object") return "";
   const keys = [
     "message",
+    "Message",
     "summary",
     "caseBrief",
     "caseSummary",
+    "case_summary",
+    "caseDescription",
+    "caseDetails",
     "description",
     "notes",
     "brief",
-    "case_summary",
-    "caseDescription",
+    "caseBriefing",
+    "enquiry",
+    "details",
+    "matter",
+    "additionalInfo",
+    "additional_info",
+    "enquiryDetails",
+    "matterDescription",
+    "additionalNotes",
+    "caseBackground",
+    "specificQuestions",
+    "briefSummary",
+    "conflict_info",
+    "note",
   ];
   for (const key of keys) {
     if (body[key] != null && String(body[key]).trim()) return String(body[key]).trim();
@@ -100,12 +116,13 @@ export function sanitize(str) {
 export function fieldsFromBody(body = {}) {
   const fullName = sanitize(body.fullName ?? body.name ?? "");
   const email = sanitize(body.email).toLowerCase();
+  const resolvedMessage = sanitize(resolveLeadMessage(body));
   return {
     timestamp: new Date().toISOString(),
     fullName,
     organisation: sanitize(body.organisation ?? body.law_firm ?? body.lawFirm ?? ""),
     email,
-    summary: sanitize(body.summary ?? body.note ?? ""),
+    summary: resolvedMessage || sanitize(body.summary ?? body.note ?? ""),
     brand: BRAND_NAME,
   };
 }

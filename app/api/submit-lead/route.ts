@@ -31,12 +31,30 @@ type LeadBody = {
 function resolveLeadMessage(body: Record<string, unknown>): string {
   const keys = [
     "message",
+    "Message",
     "summary",
     "caseBrief",
     "caseSummary",
+    "case_summary",
+    "caseDescription",
+    "caseDetails",
     "description",
     "notes",
     "brief",
+    "caseBriefing",
+    "enquiry",
+    "details",
+    "matter",
+    "additionalInfo",
+    "additional_info",
+    "enquiryDetails",
+    "matterDescription",
+    "additionalNotes",
+    "caseBackground",
+    "specificQuestions",
+    "briefSummary",
+    "conflict_info",
+    "note",
   ];
   for (const key of keys) {
     const value = body[key];
@@ -74,7 +92,10 @@ export async function POST(request: Request) {
   const fullName = sanitize(body.fullName ?? body.name ?? "");
   const email = (body.email ?? "").toLowerCase().trim();
   const organisation = sanitize(body.organisation ?? body.law_firm ?? "");
-  const summary = sanitize(body.summary ?? "");
+  const resolvedMessage = sanitize(
+    resolveLeadMessage(body as Record<string, unknown>)
+  );
+  const summary = resolvedMessage || sanitize(body.summary ?? "");
 
   if (!fullName || !email) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
@@ -114,7 +135,7 @@ export async function POST(request: Request) {
           "Phone Number": sanitize(body.phone ?? ""),
           "Brand name": BRAND_NAME,
           domain: getSiteDomain(),
-          message: sanitize(resolveLeadMessage(body as Record<string, unknown>)),
+          message: resolvedMessage,
         }),
       });
     } catch (error) {
