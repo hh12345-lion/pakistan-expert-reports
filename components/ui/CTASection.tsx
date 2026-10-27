@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function CTASection({
   title = "Ready to instruct a Pakistan country expert?",
-  description = "Send firm name, contact, and a short case note. We reply within one business day with availability, Legal Aid rates where relevant, and next steps under the Immigration Tribunal Practice Direction.",
+  description = "Tell us your firm, a contact and a line or two about the Pakistani case. Within one business day we will confirm an available author, Legal Aid rates if they apply, and what we need next.",
 }: {
   title?: string;
   description?: string;

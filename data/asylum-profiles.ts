@@ -125,12 +125,12 @@ export const asylumProfiles: AsylumProfile[] = [
     h1: "LGBTQ+ Asylum Expert Report | Pakistan Country Evidence",
     content: [
       "Same-sex conduct is criminalised in Pakistan under section 377 of the Pakistan Penal Code, carrying potential penalties of up to life imprisonment plus fine. Social attitudes towards LGBTQ+ individuals are predominantly hostile, and state protection is generally unavailable. LGBTQ+ Pakistanis face violence from family members, community vigilantes, and in some cases state actors including police.",
-      "Expert reports assess individual appellant profiles against current country conditions and the HJ (Iran) [2010] UKSC 31 standard on sexuality and the well-founded fear test under the Refugee Convention 1951. Reports address criminalisation frameworks, enforcement practice, family and community violence, and the practical impossibility of living openly as an LGBTQ+ person in Pakistan without real risk of harm.",
+      "Reports for LGBTQ+ appellants from Pakistan cover the criminal law, how it is used, and violence from family and community, then apply HJ (Iran) [2010] UKSC 31 and the Refugee Convention's well-founded fear test to the appellant. Living openly as an LGBTQ+ person in Pakistan carries a real risk of harm, and reports explain why.",
       "Khawaja Sira (hijra and transgender) individuals occupy a distinct legal and social position in Pakistan. Following a 2009 Supreme Court ruling, Khawaja Sira individuals have some formal legal recognition, but face severe discrimination, violence, and social exclusion in practice. Expert reports addressing transgender asylum claims from Pakistan analyse both the formal legal position and the practical reality of life for Khawaja Sira individuals across different regions of Pakistan.",
     ],
     faqs: [
       {
-        question: "What is the legal position for LGBTQ+ people in Pakistan?",
+        question: "Is same-sex conduct illegal in Pakistan?",
         answer:
           "Same-sex conduct is criminalised under s377 of the Pakistan Penal Code, carrying potential penalties of up to life imprisonment plus fine. Social attitudes towards LGBTQ+ individuals are predominantly hostile and state protection is generally unavailable. Expert reports assess the individual appellant's profile against current country conditions and the HJ (Iran) [2010] standard.",
       },
@@ -156,7 +156,7 @@ export const asylumProfiles: AsylumProfile[] = [
     ],
     faqs: [
       {
-        question: "What political persecution risks exist in Pakistan?",
+        question: "Who faces political persecution in Pakistan?",
         answer:
           "Pakistan's political landscape has been particularly turbulent since 2022 to 2023, with PTI supporters, journalists, and human rights defenders facing targeted persecution by state and military intelligence agencies. Enforced disappearances of Baloch nationalists, journalists, and activists remain a serious concern. Expert reports assess the individual's political profile and activities against current conditions.",
       },
@@ -203,7 +203,7 @@ export const asylumProfiles: AsylumProfile[] = [
     h1: "Actors of Protection Expert Report | Pakistan Country Evidence",
     content: [
       "State protection in Pakistan varies significantly by appellant profile and location. For Ahmadis and blasphemy accusees, the March 2025 CPIN confirms the state is able but generally unwilling to protect. Police are complicit in harassment, courts fail to apply correct standards in blasphemy cases, and judges are reluctant to decide due to fear of retribution. For women facing honour-based violence, formal protection mechanisms exist but enforcement is deeply inconsistent.",
-      "The Pakistani police force has significant limitations, including corruption, resource constraints, and in some cases active complicity in harm against certain groups. Expert reports assess both the formal existence of protection mechanisms and their practical effectiveness for the specific appellant profile, including the role of military intelligence, the judicial system, and provincial security agencies.",
+      "Pakistan's police are hampered by corruption and lack of resources, and for some groups they are part of the threat. Reports separate what protection exists on paper from what the appellant could actually rely on, looking at the police, the courts, provincial security agencies and military intelligence.",
       "Geographic variation is critical in Pakistan protection analysis. Protection availability differs between major urban centres such as Islamabad, Lahore, and Karachi and rural or conflict-affected areas in Balochistan, Khyber Pakhtunkhwa, and Punjab. Expert reports address the state protection test under UNHCR guidelines, profile-specific willingness analysis, and whether non-state actors of protection can realistically substitute for ineffective state protection in the individual appellant's circumstances.",
     ],
     faqs: [

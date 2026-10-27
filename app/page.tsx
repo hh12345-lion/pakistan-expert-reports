@@ -17,7 +17,7 @@ export const metadata = createMetadata({
 const pillars = [
   {
     title: "Practice Direction compliant",
-    body: "Reports follow Immigration Tribunal Practice Direction paragraph 10 and CPR Part 35: independence, disclosed sources, and reasoned opinion, not advocacy.",
+    body: "Each Pakistan report is independent, cites its sources and gives reasons for every opinion, as paragraph 10 of the Immigration Tribunal Practice Direction and CPR Part 35 require.",
   },
   {
     title: "CPIN-current citation",

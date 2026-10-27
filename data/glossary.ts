@@ -26,7 +26,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "CPIN (Country Policy Information Note)",
     definition:
-      "Home Office country guidance documents setting out the Home Office's position on country conditions for asylum decision-making.",
+      "Country Policy and Information Notes: the Home Office's own view of conditions in Pakistan, issued by topic (Ahmadis, Shia Muslims and others) and relied on in refusal letters.",
     link: "/cpin-country-guidance",
   },
   {
@@ -56,7 +56,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "HJ (Iran) [2010]",
     definition:
-      "Leading Supreme Court case establishing that asylum claims based on sexuality must be assessed without requiring the claimant to conceal their identity or live discreetly.",
+      "HJ (Iran) [2010] UKSC 31: the Supreme Court held that a gay claimant cannot be refused on the basis that they could hide their sexuality. It frames every LGBTQ+ report on Pakistan.",
     link: "/asylum-profiles/lgbtq-asylum-pakistan",
   },
   {
@@ -86,7 +86,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Legal Aid (Immigration)",
     definition:
-      "Public funding for immigration and asylum cases through the Legal Aid Agency, requiring prior authority for expert reports.",
+      "State funding for asylum cases through the Legal Aid Agency. A report can be paid for this way once the LAA has granted prior authority.",
     link: "/how-to-instruct",
   },
   {
@@ -104,7 +104,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Particular Social Group (PSG)",
     definition:
-      "One of the five Refugee Convention grounds for persecution: race, religion, nationality, political opinion, or membership of a particular social group.",
+      "A Convention reason for persecution. In Pakistani cases it is most often religion (Ahmadis, Shia, Christians), political opinion (PTI and others) or particular social group (women at risk of honour violence, LGBTQ+ people).",
     link: "/asylum-profiles/women-honour-based-violence",
   },
   {
@@ -116,7 +116,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Refugee Convention 1951",
     definition:
-      "The international treaty defining refugee status and the grounds on which persecution must be based for asylum eligibility.",
+      "The 1951 Convention Relating to the Status of Refugees, which sets the definition of a refugee that every Pakistani asylum claim is measured against.",
     link: "/glossary#well-founded-fear",
   },
   {
@@ -140,7 +140,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "State Protection",
     definition:
-      "The availability and effectiveness of protection provided by the state against persecution or serious harm, including police, courts, and government agencies.",
+      "Whether Pakistani police, courts and other authorities would actually protect the appellant, which reports examine in the light of corruption and, for some groups, police complicity.",
     link: "/asylum-profiles/actors-of-protection-pakistan",
   },
   {
@@ -152,13 +152,13 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "UNHCR Guidelines",
     definition:
-      "Guidance published by the UN Refugee Agency on the interpretation and application of refugee law standards, including on religion-based persecution and women at risk.",
+      "UNHCR's guidance on applying refugee law, often cited in Pakistan reports for religion-based claims and women at risk.",
     link: "/cpin-country-guidance",
   },
   {
     term: "Upper Tribunal (IAC)",
     definition:
-      "The Upper Tribunal Immigration and Asylum Chamber, which hears appeals from the First-tier Tribunal and decides country guidance cases such as MN and Others [2012].",
+      "The appeal tier above the First-tier Tribunal. It also issues country guidance, including MN and Others [2012] on Ahmadis in Pakistan.",
     link: "/case-types/upper-tribunal-pakistan",
   },
   {
@@ -170,25 +170,25 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Well-Founded Fear",
     definition:
-      "The standard for refugee status: a reasonable degree of likelihood that the claimant would face persecution if returned to their country of origin.",
+      "The level of risk an appellant must show: a reasonable degree of likelihood of persecution on return to Pakistan, which is lower than the balance of probabilities.",
     link: "/what-is-a-pakistan-expert-report",
   },
   {
     term: "Immigration Tribunal Practice Direction",
     definition:
-      "Rules governing procedure and evidence in the Immigration and Asylum Chamber, including paragraph 10 on expert evidence duties and independence.",
+      "The tribunal's procedural rules for immigration and asylum cases. Paragraph 10 sets out what is required of experts, including independence.",
     link: "/qualifications",
   },
   {
     term: "Internal Relocation Alternative",
     definition:
-      "The principle that a claimant may be required to relocate within their country of origin if it is safe and reasonable to do so, applying both the safety test and the unduly harsh test.",
+      "The argument that an appellant could move to another part of Pakistan instead. It fails unless the new place is both safe and not unduly harsh for them to live in.",
     link: "/asylum-profiles/women-honour-based-violence",
   },
   {
     term: "COI (Country of Origin Information)",
     definition:
-      "Factual information about conditions in a country of origin, used in asylum decision-making and expert reports. Home Office CPINs are a primary COI source for Pakistan cases.",
+      "Country of origin information: the factual evidence on Pakistan that decision-makers and report authors rely on, with Home Office CPINs among the main sources.",
     link: "/cpin-country-guidance",
   },
 ];

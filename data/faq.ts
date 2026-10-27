@@ -59,6 +59,6 @@ export const faqs: FAQ[] = [
   {
     question: "How early should I instruct a Pakistan expert report?",
     answer:
-      "Instruct as soon as the need for expert evidence is identified, ideally when the appeal is lodged or at the earliest case management stage. Allow 2 to 3 weeks for a standard report. For Legal Aid cases, apply for LAA prior authority before instruction. For Ahmadi claims, coordinate Ahmadiyya Muslim Association UK verification alongside expert report commissioning.",
+      "As soon as you know a report will be needed, ideally at lodging or the first case management hearing, since a standard report takes 2 to 3 weeks. Get LAA prior authority first in legally aided cases. In Ahmadi appeals, request the Ahmadiyya Muslim Association UK letter at the same time so both arrive together.",
   },
 ];
