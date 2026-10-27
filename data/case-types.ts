@@ -16,25 +16,25 @@ export const caseTypes: CaseType[] = [
   {
     slug: "asylum-appeal-ftt",
     title: "FTT Asylum Appeal",
-    metaTitle: "Pakistan Expert Report for FTT Asylum Appeals | First-tier Tribunal",
+    metaTitle: "Pakistan Country Report for a First-tier Tribunal Appeal",
     metaDescription:
       "Pakistan expert report for First-tier Tribunal asylum appeals. Country condition reports for Ahmadis, blasphemy, Shia Muslims, honour-based violence, LGBTQ+, and political persecution. Legal Aid compatible.",
-    h1: "Pakistan Expert Report for First-tier Tribunal Asylum Appeals",
+    h1: "Country Reports for Pakistani First-tier Tribunal Appeals",
     content: [
-      "First-tier Tribunal (Immigration and Asylum Chamber) appeals are the primary forum for challenging Home Office refusals of Pakistani asylum claims. Pakistan is among the highest-volume asylum claim nationalities, spanning Ahmadi persecution, blasphemy accusations, Shia sectarian targeting, honour-based violence, LGBTQ+ criminalisation under s377, political persecution including PTI supporters, and risk on return for failed asylum seekers.",
-      "Expert country condition reports provide the independent, authoritative evidence tribunals require to assess credibility, risk on return, state protection, and internal relocation. Reports must comply with Immigration Tribunal Practice Direction paragraph 10 and the Expert Reports in the Immigration Tribunal guide (October 2025) by Adam Pipe of No.8 Chambers.",
-      "Early instruction is critical. Allow 2 to 3 weeks for a standard report. Pakistan Expert Reports matches solicitors with qualified Pakistan country experts who have tribunal acceptance records, current CPIN knowledge including the March 2025 Ahmadis CPIN Version 6.0, and familiarity with MN and Others (Ahmadis) Pakistan CG [2012] UKUT 00389.",
+      "Pakistan is one of the largest sources of asylum appeals in the First-tier Tribunal, and the claims are unusually varied: Ahmadi faith, blasphemy accusations, Shia sectarian attacks, honour-based violence, LGBTQ+ claims under s377, PTI and other political activity, and risk to returning failed asylum seekers. The report is built around whichever of these the refusal letter disputes.",
+      "For a Pakistani appeal the report usually has to answer whether the account fits what is known about the appellant's area and community, what would happen on return, and whether the police or a move to another city would keep them safe. It follows paragraph 10 of the Immigration Tribunal Practice Direction and the October 2025 guide Expert Reports in the Immigration Tribunal by Adam Pipe of No.8 Chambers.",
+      "Build in 2 to 3 weeks for a standard report. Authors are chosen for their track record before tribunals and their command of the Pakistan material that matters most, such as the March 2025 Ahmadis CPIN Version 6.0 and MN and Others (Ahmadis) Pakistan CG [2012] UKUT 00389.",
     ],
     faqs: [
       {
-        question: "When should I instruct a Pakistan expert for a First-tier Tribunal appeal?",
+        question: "How early should the report be commissioned for an FTT appeal?",
         answer:
-          "Instruct as soon as the appeal is lodged and grounds are identified. Allow 2 to 3 weeks for a standard report. Urgent instructions are available for imminent hearings. Late instruction risks adjournment applications and increased costs.",
+          "Once the grounds are settled, ideally straight after lodging. A standard report takes 2 to 3 weeks, and urgent work is possible for close hearings, but leaving it late can force an adjournment request and add cost.",
       },
       {
-        question: "What should a Pakistan expert report for the FTT contain?",
+        question: "What should the FTT report address?",
         answer:
-          "Reports should address the specific factual matrix: country conditions relevant to the claim, state protection analysis, internal relocation feasibility, consistency with current CPINs and MN and Others [2012] where applicable, and source citations to Home Office COI, UNHCR, and field research.",
+          "The conditions that matter for this claim in Pakistan, whether police and courts would protect the appellant, whether relocation is realistic, how the evidence sits with the current CPINs and, for Ahmadis, MN and Others [2012], with sources from Home Office COI, UNHCR and field research.",
       },
     ],
     relatedProfiles: [
@@ -52,18 +52,18 @@ export const caseTypes: CaseType[] = [
       "Pakistan expert report for Upper Tribunal country guidance and departure cases. MN and Others [2012], March 2025 Ahmadis CPIN, and oral evidence.",
     h1: "Pakistan Expert Report for Upper Tribunal Proceedings",
     content: [
-      "Upper Tribunal (Immigration and Asylum Chamber) proceedings include country guidance applications, departure from guidance cases, and appeals from First-tier Tribunal decisions on Pakistani asylum claims. Expert evidence in Upper Tribunal work must meet the highest evidential standards.",
+      "Pakistani cases reach the Upper Tribunal on appeal from the First-tier, and occasionally as country guidance cases or arguments to depart from existing guidance such as MN and Others. At this level the report's sourcing and method are examined closely.",
       "MN and Others (Ahmadis - country conditions) Pakistan CG [2012] UKUT 00389 remains the leading country guidance for Ahmadi claims. With the March 2025 Ahmadis CPIN Version 6.0 confirming that the state is able but unwilling to protect Ahmadis, experts must address whether existing guidance and CPIN positions remain current and provide granular country analysis.",
-      "Oral evidence is most common in Upper Tribunal country guidance cases. Pakistan Expert Reports experts are experienced in tribunal attendance and cross-examination on Pakistan country conditions, including blasphemy law misuse, TLP mob violence, and profile-specific protection analysis.",
+      "Country guidance hearings are where authors are most often asked to attend. Ours have been questioned before on blasphemy law misuse, TLP mob violence and whether protection is available for particular profiles.",
     ],
     faqs: [
       {
-        question: "When is oral evidence required in Upper Tribunal Pakistan cases?",
+        question: "Will the author have to attend an Upper Tribunal hearing?",
         answer:
-          "Oral evidence is most common in country guidance cases or where the tribunal directs. Experts should be prepared to give evidence on current CPIN positions, MN and Others [2012] applicability, field research findings, and profile-specific risk analysis under cross-examination.",
+          "Usually only in country guidance cases or when the tribunal directs. If so, expect questions on the current CPINs, whether MN and Others [2012] still applies, the field research and the risk to the appellant.",
       },
       {
-        question: "Which Pakistan CPINs are most relevant to Upper Tribunal work?",
+        question: "Which CPINs matter most in Pakistani Upper Tribunal cases?",
         answer:
           "The March 2025 Ahmadis CPIN Version 6.0, July 2021 Shia Muslims CPIN, July 2024 Healthcare CPIN, and actors of protection analysis are the most frequently cited in current Upper Tribunal Pakistan cases alongside MN and Others [2012].",
       },
@@ -78,7 +78,7 @@ export const caseTypes: CaseType[] = [
   {
     slug: "ahmadi-asylum-claims",
     title: "Ahmadi Asylum Claims",
-    metaTitle: "Ahmadi Asylum Pakistan Expert Report | March 2025 CPIN & MN and Others",
+    metaTitle: "Country Report for Ahmadi Appeals | MN and Others & 2025 CPIN",
     metaDescription:
       "Ahmadi asylum Pakistan expert report for tribunals. Ordinance XX 1984, TLP mob violence, March 2025 CPIN Version 6.0, MN and Others [2012], and Ahmadiyya verification.",
     h1: "Ahmadi Asylum Claims from Pakistan: Expert Report Evidence",
@@ -89,12 +89,12 @@ export const caseTypes: CaseType[] = [
     ],
     faqs: [
       {
-        question: "What evidence standard applies to Ahmadi Pakistan asylum claims?",
+        question: "Which test applies in an Ahmadi appeal?",
         answer:
           "Tribunals assess whether the appellant faces a well-founded fear of persecution as an Ahmadi Muslim. Expert reports provide country conditions evidence on Ordinance XX, blasphemy exposure, TLP violence, and state protection failures, supporting the tribunal's overall assessment against MN and Others [2012] and the March 2025 CPIN.",
       },
       {
-        question: "What does the March 2025 Ahmadis CPIN say?",
+        question: "What changed in the March 2025 Ahmadis CPIN?",
         answer:
           "The March 2025 CPIN Version 6.0 confirms that while the state is able to protect Ahmadis in principle, it is generally unwilling to do so. Police are complicit in harassment, courts do not apply correct standards in blasphemy cases, and judges are reluctant to decide blasphemy cases due to fear of retribution. Expert reports assess the individual appellant's profile against these confirmed conditions.",
       },
@@ -171,25 +171,25 @@ export const caseTypes: CaseType[] = [
   {
     slug: "deportation-removal-pakistan",
     title: "Deportation & Removal Pakistan",
-    metaTitle: "Deportation Removal Pakistan Expert Report | Risk on Return",
+    metaTitle: "Country Report on Return to Pakistan | Deportation & Removal",
     metaDescription:
       "Deportation and removal Pakistan expert report for tribunals. Risk on return analysis, failed asylum seekers, state protection, and interim relief evidence.",
-    h1: "Deportation & Removal to Pakistan: Expert Report Evidence",
+    h1: "Country Reports When Removal to Pakistan Is Pending",
     content: [
-      "Deportation and removal cases require expert evidence on risk on return, state protection, and internal relocation for Pakistani nationals. This includes appeals against deportation orders, judicial review of removal directions, interim relief applications, and risk assessments for failed asylum seekers.",
-      "Expert reports address the specific profile of the individual facing removal, citing current CPINs including the March 2025 Ahmadis CPIN, July 2021 Shia Muslims CPIN, and profile-specific country guidance. Reports must be prepared quickly where removal is imminent.",
+      "When a Pakistani national faces deportation or removal, the report looks at what would happen after arrival: whether their profile would draw attention, whether the police would help, and whether another city would be safer. It can support deportation appeals, judicial review of removal directions, interim relief and failed asylum seeker cases.",
+      "Reports are tied to the individual's profile and cite the CPINs that apply to it, such as the March 2025 Ahmadis CPIN or the July 2021 Shia Muslims CPIN, alongside any country guidance. Where removal is close, they are written to a short deadline.",
       "Pakistan Expert Reports provides urgent instruction capability for deportation cases with hearing dates or removal directions pending, including Ahmadi, blasphemy, political, and LGBTQ+ risk on return analysis.",
     ],
     faqs: [
       {
         question: "Can expert evidence stop a deportation to Pakistan?",
         answer:
-          "Expert evidence supports the legal arguments made by the appellant's representatives. The expert provides independent country condition analysis on risk on return, state protection, and relocation that the tribunal or court considers alongside other evidence.",
+          "The report does not argue the case; it gives the court an independent account of risk on return, protection and relocation in Pakistan, which the representatives then build their arguments on.",
       },
       {
-        question: "How quickly can a Pakistan expert report be prepared for deportation cases?",
+        question: "How fast can a report be produced when removal is imminent?",
         answer:
-          "Urgent reports can be prepared within 5 business days where necessary. Contact us with the removal date or hearing date for availability confirmation.",
+          "In 5 business days where needed. Send us the removal or hearing date and we will confirm whether an author can meet it.",
       },
     ],
     relatedProfiles: [
@@ -202,23 +202,23 @@ export const caseTypes: CaseType[] = [
   {
     slug: "fresh-claims-pakistan",
     title: "Fresh Claims Pakistan",
-    metaTitle: "Fresh Claims Pakistan Expert Report | New Evidence Reports",
+    metaTitle: "Country Report for a Pakistani Fresh Claim",
     metaDescription:
       "Fresh claims Pakistan expert report for immigration cases. March 2025 Ahmadis CPIN, changed conditions, and updated country evidence reports.",
-    h1: "Fresh Claims from Pakistan: Expert Report Evidence",
+    h1: "Country Reports for Fresh Claims by Pakistani Nationals",
     content: [
-      "Fresh claims require evidence that conditions in Pakistan have changed or that new evidence exists which was not previously considered. With the March 2025 Ahmadis CPIN Version 6.0 and ongoing political crackdowns since 2023, fresh claim evidence often addresses material changes since the original decision.",
-      "Expert reports identify what has changed since the previous decision, whether new CPINs or country guidance affect the appellant's profile, and provide updated country condition analysis addressing the fresh claim threshold under Home Office and tribunal practice.",
+      "Two developments drive many Pakistani fresh claims: the March 2025 Ahmadis CPIN Version 6.0 and the political crackdowns since 2023. A fresh claim report shows how these, or new facts about the appellant, change the picture since the last decision.",
+      "The report dates the previous decision, compares the evidence then and now for the appellant's profile, and explains why the difference meets the fresh claim threshold.",
       "Common fresh claim triggers include updated Ahmadis CPIN findings on rising killings and police complicity, new blasphemy accusations or TLP mobilisation, changed political persecution risk for PTI supporters, and new evidence of UK-based activity attracting Pakistani authority attention.",
     ],
     faqs: [
       {
-        question: "What makes a fresh claim expert report different from an appeal report?",
+        question: "How is a fresh claim report different?",
         answer:
-          "Fresh claim reports must identify what is new since the previous decision, address the fresh claim threshold, and explain why the new evidence could not reasonably have been provided earlier. The expert focuses on material changes in country conditions or new profile information.",
+          "It is a comparison rather than a fresh assessment. It sets out what is new since the last decision, whether in Pakistan or about the appellant, why that matters to the fresh claim threshold, and why it could not reasonably have been raised before.",
       },
       {
-        question: "Which CPIN updates are most relevant to Pakistan fresh claims?",
+        question: "Which CPIN changes support Pakistani fresh claims?",
         answer:
           "The March 2025 Ahmadis CPIN Version 6.0, July 2021 Shia Muslims CPIN, July 2024 Healthcare CPIN, and updated political persecution conditions following the 2023 to 2024 crackdown are the most significant recent updates affecting fresh claims.",
       },
@@ -233,10 +233,10 @@ export const caseTypes: CaseType[] = [
   {
     slug: "political-claim-pakistan",
     title: "Political Persecution Pakistan",
-    metaTitle: "Political Persecution Pakistan Expert Report | PTI & Journalists",
+    metaTitle: "Country Report for Pakistani Political Claims | PTI & Journalists",
     metaDescription:
       "Political persecution Pakistan expert report for tribunals. PTI supporters, journalists, enforced disappearances, Baloch nationalists, and 2025 conditions.",
-    h1: "Political Persecution Asylum Claims from Pakistan: Expert Report Evidence",
+    h1: "Country Reports for Pakistani Political Asylum Claims",
     content: [
       "Political persecution asylum claims from Pakistan have increased significantly following the post-2023 crackdown on PTI supporters, journalists, human rights defenders, and Baloch nationalists. Expert reports assess the individual's political profile, visibility, and diaspora activities against current enforcement patterns by state and military intelligence agencies.",
       "Expert reports address enforced disappearances, detention conditions, freedom of press restrictions, and whether individuals with diaspora political activity would attract Pakistani authority attention on return. Reports cite current country evidence and profile-specific risk analysis.",
