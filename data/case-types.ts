@@ -178,7 +178,7 @@ export const caseTypes: CaseType[] = [
     content: [
       "When a Pakistani national faces deportation or removal, the report looks at what would happen after arrival: whether their profile would draw attention, whether the police would help, and whether another city would be safer. It can support deportation appeals, judicial review of removal directions, interim relief and failed asylum seeker cases.",
       "Reports are tied to the individual's profile and cite the CPINs that apply to it, such as the March 2025 Ahmadis CPIN or the July 2021 Shia Muslims CPIN, alongside any country guidance. Where removal is close, they are written to a short deadline.",
-      "Pakistan Expert Reports provides urgent instruction capability for deportation cases with hearing dates or removal directions pending, including Ahmadi, blasphemy, political, and LGBTQ+ risk on return analysis.",
+      "If a hearing or removal directions are already set, we can take the case on urgently, whether the risk on return arises from Ahmadi faith, a blasphemy accusation, political activity or sexuality.",
     ],
     faqs: [
       {
