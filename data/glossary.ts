@@ -170,7 +170,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   {
     term: "Well-Founded Fear",
     definition:
-      "The level of risk an appellant must show: a reasonable degree of likelihood of persecution on return to Pakistan, which is lower than the balance of probabilities.",
+      "The level of risk an appellant must show: a reasonable degree of likelihood of persecution on return to Pakistan.",
     link: "/what-is-a-pakistan-expert-report",
   },
   {
