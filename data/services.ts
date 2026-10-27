@@ -22,36 +22,36 @@ export type Service = {
 export const services: Service[] = [
   {
     id: "country-condition-reports",
-    title: "Country Condition Reports (General Pakistan)",
+    title: "Pakistan Country Condition Reports",
     navLabel: "Country Condition Reports",
     description:
-      "Comprehensive Pakistan country condition reports for asylum appeals, covering state protection, internal relocation, and profile-specific risk analysis.",
+      "Reports on conditions in Pakistan for any asylum profile, answering whether the police and courts would protect the appellant and whether a move to another city would be safe.",
     metaTitle: "Pakistan Country Condition Reports | Asylum Expert Evidence",
     metaDescription:
-      "CPR Part 35 Pakistan country condition reports for asylum and immigration tribunals. State protection, internal relocation, and profile-specific analysis.",
+      "Pakistan country reports for tribunals, written to CPR Part 35: police and court protection, relocation to Karachi, Lahore or Islamabad, and the appellant's own risk profile.",
     content: [
-      "Pakistan country condition reports provide the independent, authoritative evidence immigration tribunals require to assess risk on return, state protection, and internal relocation for Pakistani asylum claimants.",
-      "Reports address the specific factual matrix of each case, citing Home Office CPINs, MN and Others (Ahmadis) [2012] UKUT 00389, UNHCR sources, and field research. All reports comply with Immigration Tribunal Practice Direction paragraph 10.",
+      "Most Pakistani refusal letters turn on two arguments: that the police will protect the appellant, and that they could move to a large city. A country condition report tests both against what the evidence shows for someone with the appellant's profile.",
+      "Each report works from the facts of the case and draws on the Pakistan CPINs, UNHCR material, field research and, where relevant, MN and Others (Ahmadis) [2012] UKUT 00389. Reports meet paragraph 10 of the Immigration Tribunal Practice Direction.",
     ],
     relatedHref: "/asylum-profiles/actors-of-protection-pakistan",
     methodology: [
-      { phase: "Case scoping", whatWeDo: "Identify asylum profile, relevant CPINs, and claim grounds", deliverable: "Scope confirmation and expert match" },
-      { phase: "Research", whatWeDo: "Field research, Home Office COI, UNHCR, and primary sources", deliverable: "Source bibliography" },
-      { phase: "Report drafting", whatWeDo: "OSCOLA-cited report addressing the specific claim matrix", deliverable: "Practice Direction compliant expert report" },
+      { phase: "Case scoping", whatWeDo: "Pin down the Pakistani profile, the CPINs relied on and the Convention ground", deliverable: "Scope confirmation and expert match" },
+      { phase: "Research", whatWeDo: "Pakistani press and field sources checked against Home Office COI and UNHCR", deliverable: "Source bibliography" },
+      { phase: "Report drafting", whatWeDo: "Report answering the instruction questions, with OSCOLA citations", deliverable: "Report meeting the tribunal's practice direction" },
     ],
     faqs: [
       {
-        question: "What should a Pakistan country condition report include?",
+        question: "What goes into a Pakistan country condition report?",
         answer:
-          "Reports address profile-specific risk, state protection analysis, internal relocation feasibility, and consistency with current CPINs and country guidance, with OSCOLA-cited sources and field research.",
+          "The risk to someone with the appellant's profile, whether Pakistani police and courts would protect them, whether relocation within Pakistan is realistic, and how the evidence compares with current CPINs and country guidance, all sourced and cited in OSCOLA form.",
       },
       {
-        question: "How long does a standard Pakistan country condition report take?",
-        answer: "Typically 2 to 3 weeks from instruction. Urgent turnaround (5 business days) may be available subject to expert availability.",
+        question: "When will the report be ready?",
+        answer: "Usually 2 to 3 weeks after instruction. For tight deadlines, a report in 5 business days may be possible if an author is free.",
       },
       {
-        question: "Are Pakistan country condition reports Legal Aid compatible?",
-        answer: "Yes. Most reports in asylum proceedings are Legal Aid funded. LAA prior authority is required before instruction.",
+        question: "Can the report be paid for by Legal Aid?",
+        answer: "Yes, and most are. Apply for prior authority from the Legal Aid Agency before instructing us.",
       },
     ],
   },
@@ -66,7 +66,7 @@ export const services: Service[] = [
       "Ahmadi Pakistan asylum expert reports for tribunals. Ordinance XX 1984, March 2025 CPIN Version 6.0, MN and Others [2012], TLP, and state protection analysis.",
     content: [
       "Ahmadi asylum claims from Pakistan require specialist expert evidence on Ordinance XX 1984, constitutional and penal code restrictions, TLP mobilisation, and blasphemy accusations under sections 295 to 298 of the Pakistan Penal Code.",
-      "Expert reports assess whether the appellant's specific profile creates a real risk beyond the general CPIN position, consistent with MN and Others (Ahmadis) Pakistan CG [2012] UKUT 00389 and the March 2025 Ahmadi CPIN Version 6.0.",
+      "The key question in most Ahmadi appeals is whether this appellant practises or would practise their faith openly. Reports apply MN and Others (Ahmadis) Pakistan CG [2012] UKUT 00389 and the March 2025 Ahmadi CPIN Version 6.0 to that question for the individual, rather than restating the general position.",
     ],
     relatedHref: "/asylum-profiles/ahmadi-muslims-pakistan",
     methodology: [
@@ -76,7 +76,7 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: "What does the March 2025 Ahmadi CPIN say?",
+        question: "How does the March 2025 Ahmadi CPIN affect a report?",
         answer:
           "Version 6.0 confirms the state is able but unwilling to protect Ahmadis. Killings are on the rise and police are often complicit. Expert reports assess whether the appellant's profile creates a real risk beyond this general position.",
       },
@@ -160,7 +160,7 @@ export const services: Service[] = [
           "Watta satta is an exchange marriage practice linking two families. A woman seeking to leave an abusive marriage may trigger retaliation against her natal family, increasing honour-based violence risk. Expert reports address this intersection where relevant.",
       },
       {
-        question: "What HBV evidence do expert reports address?",
+        question: "Which honour-based violence issues does a report cover?",
         answer:
           "Reports cover honour killing prevalence, jirga practice, police and court responses, shelter availability, forced marriage risk, and whether state protection is effective for the appellant's specific circumstances.",
       },
@@ -177,24 +177,24 @@ export const services: Service[] = [
       "LGBTQ+ Pakistan asylum expert reports for tribunals. s377 PPC, khawaja sira, HJ (Iran) [2010] standard, and internal relocation analysis.",
     content: [
       "LGBTQ+ asylum claims from Pakistan require specialist expert evidence on section 377 of the Pakistan Penal Code, Sharia-influenced social attitudes, police harassment, and violence from family and non-state actors.",
-      "Expert reports assess whether the appellant's specific profile creates a real risk that goes beyond general country conditions, consistent with the HJ (Iran) [2010] UKSC 31 standard on sexuality and the well-founded fear test.",
+      "For Pakistani LGBTQ+ appellants, the report looks at how the appellant would live on return and why, which is the question HJ (Iran) [2010] UKSC 31 requires, and documents the risk from family, community and police.",
     ],
     relatedHref: "/asylum-profiles/lgbtq-asylum-pakistan",
     methodology: [
       { phase: "Legal framework", whatWeDo: "Analyse s377 PPC, enforcement practice, and khawaja sira context", deliverable: "Legislative analysis section" },
       { phase: "Risk assessment", whatWeDo: "Family violence, police harassment, NGO protection availability", deliverable: "Risk on return analysis" },
-      { phase: "Report", whatWeDo: "HJ (Iran) consistent country conditions report", deliverable: "Tribunal-ready expert report" },
+      { phase: "Report", whatWeDo: "Report structured around the HJ (Iran) questions", deliverable: "Tribunal-ready expert report" },
     ],
     faqs: [
       {
-        question: "How do LGBTQ+ expert reports approach sexuality?",
+        question: "Does the report decide whether the appellant is gay?",
         answer:
-          "Experts provide country conditions context only. They do not determine the claimant's sexuality. Reports address criminalisation, enforcement, and risk on return under the HJ (Iran) [2010] standard.",
+          "No. Sexuality is a matter for the tribunal. The report explains the law in Pakistan, how it is enforced, and the risk on return for someone with the identity the appellant describes, applying HJ (Iran) [2010].",
       },
       {
-        question: "What is the legal position for LGBTQ+ people in Pakistan?",
+        question: "What does Pakistani law say about same-sex relationships?",
         answer:
-          "Section 377 of the Pakistan Penal Code criminalises certain same-sex conduct. Social attitudes remain deeply hostile, and LGBTQ+ individuals face violence from family, community, and state actors including police.",
+          "Same-sex conduct is an offence under section 377 of the Pakistan Penal Code. Beyond the law, LGBTQ+ Pakistanis report violence from relatives, neighbours and police, and the report documents both.",
       },
       {
         question: "Can LGBTQ+ Pakistanis internally relocate?",
@@ -220,7 +220,7 @@ export const services: Service[] = [
     methodology: [
       { phase: "Profile analysis", whatWeDo: "Assess political affiliation, visibility, and diaspora activity", deliverable: "Political risk profile summary" },
       { phase: "Country research", whatWeDo: "Current arrest patterns, detention conditions, enforced disappearances", deliverable: "Country conditions analysis" },
-      { phase: "Report", whatWeDo: "Profile-specific risk on return assessment", deliverable: "Tribunal-ready expert report" },
+      { phase: "Report", whatWeDo: "Assessment of risk on return for this appellant", deliverable: "Tribunal-ready expert report" },
     ],
     faqs: [
       {
@@ -245,33 +245,33 @@ export const services: Service[] = [
     title: "CPIN Challenge Reports",
     navLabel: "CPIN Challenge Reports",
     description:
-      "Independent analysis challenging Home Office CPIN findings with field research and profile-specific assessment beyond generic CPIN positions.",
+      "Reports that test the Home Office's Pakistan CPINs against newer evidence and the appellant's own profile.",
     metaTitle: "Pakistan CPIN Challenge Expert Reports | Independent Analysis",
     metaDescription:
-      "Challenge Home Office Pakistan CPIN findings with independent expert reports. Field research, updated evidence, and profile-specific analysis for tribunals.",
+      "Where a refusal leans on a Pakistan CPIN, these reports show the tribunal what newer and more specific evidence says, from Ahmadi cases to state protection.",
     content: [
-      "CPIN challenge reports provide independent analysis where the Home Office CPIN position does not reflect the appellant's specific profile or where country conditions have materially changed.",
+      "Pakistan CPINs are updated only every few years, while conditions for Ahmadis, political activists and others can shift quickly. A CPIN challenge report sets out where the CPIN no longer reflects the evidence or misses the appellant's profile.",
       "Common challenge areas include the March 2025 Ahmadi CPIN (Version 6.0), actors of protection, internal relocation for women, political opposition risk, and blasphemy acquittal safety.",
     ],
     relatedHref: "/cpin-country-guidance",
     methodology: [
-      { phase: "CPIN review", whatWeDo: "Identify relevant CPIN findings and gaps", deliverable: "CPIN analysis memo" },
-      { phase: "Independent research", whatWeDo: "Field research, NGO reports, updated country evidence", deliverable: "Challenge evidence base" },
-      { phase: "Report", whatWeDo: "Profile-specific analysis beyond CPIN generalisations", deliverable: "CPIN challenge expert report" },
+      { phase: "CPIN review", whatWeDo: "List the CPIN passages relied on and where they fall short", deliverable: "CPIN analysis memo" },
+      { phase: "Independent research", whatWeDo: "Gather Pakistani field sources, NGO reporting and newer data", deliverable: "Challenge evidence base" },
+      { phase: "Report", whatWeDo: "Apply the evidence to the appellant rather than the general case", deliverable: "CPIN challenge expert report" },
     ],
     faqs: [
       {
-        question: "When should solicitors instruct a CPIN challenge report?",
+        question: "When is a CPIN challenge report worth commissioning?",
         answer:
-          "When the appellant's profile differs from the general CPIN position, when CPINs are outdated, or when field research contradicts Home Office findings on state protection or internal relocation.",
+          "When the refusal relies on a Pakistan CPIN that is out of date, that does not cover someone like the appellant, or whose view of police protection or relocation is contradicted by more recent reporting.",
       },
       {
-        question: "Can experts simply reproduce CPIN content?",
+        question: "Is it enough for a report to quote the CPIN?",
         answer:
-          "No. Reports that reproduce CPIN without independent analysis fail the tribunal standard. Challenge reports must provide independent, sourced analysis addressing the individual appellant's circumstances.",
+          "No. Tribunals give little weight to a report that repeats the CPIN. The value of a challenge report is its own sourced analysis of the appellant's situation.",
       },
       {
-        question: "Which Pakistan CPINs are most frequently challenged?",
+        question: "Which Pakistan CPINs come up most in challenges?",
         answer:
           "Ahmadis (March 2025 Version 6.0), actors of protection, internal relocation for women, political opposition, and blasphemy-related risk on return after acquittal.",
       },
@@ -282,34 +282,34 @@ export const services: Service[] = [
     title: "Expert Report Oral Evidence",
     navLabel: "Oral Evidence",
     description:
-      "Tribunal attendance and oral evidence for country guidance cases, Upper Tribunal proceedings, and directed expert attendance.",
+      "The report's author attends the hearing to explain the Pakistan evidence and answer questions when the tribunal asks for it.",
     metaTitle: "Pakistan Expert Report Oral Evidence | Tribunal Attendance",
     metaDescription:
-      "Pakistan expert report oral evidence and tribunal attendance for country guidance cases, Upper Tribunal proceedings, and directed expert evidence.",
+      "Authors of Pakistan country reports available to give evidence at First-tier and Upper Tribunal hearings, including country guidance cases.",
     content: [
-      "Oral evidence is most common in Upper Tribunal country guidance cases or where the tribunal directs expert attendance. Pakistan Expert Reports experts are experienced in giving evidence and cross-examination on Pakistan country conditions.",
-      "Experts prepare for oral evidence by reviewing the report, letter of instruction, tribunal bundle, and anticipated cross-examination on methodology and sources.",
+      "Our authors have given evidence on Pakistan before tribunals and are used to being questioned on it. Attendance is most often needed in Upper Tribunal country guidance cases or when a judge directs it.",
+      "Before the hearing, the author rereads the report, the instructions and the bundle, and prepares for questions about their sources and method.",
     ],
     relatedHref: "/case-types/upper-tribunal-pakistan",
     methodology: [
-      { phase: "Preparation", whatWeDo: "Review report, bundle, and anticipated questions", deliverable: "Oral evidence preparation" },
-      { phase: "Tribunal attendance", whatWeDo: "Give evidence and respond to cross-examination", deliverable: "Oral evidence at hearing" },
-      { phase: "Follow-up", whatWeDo: "Written answers if directed post-hearing", deliverable: "Supplementary written responses" },
+      { phase: "Preparation", whatWeDo: "Prepare on the report, bundle and likely questions", deliverable: "Oral evidence preparation" },
+      { phase: "Tribunal attendance", whatWeDo: "Attend, give evidence and answer questions", deliverable: "Oral evidence at hearing" },
+      { phase: "Follow-up", whatWeDo: "Answer any written questions the tribunal sets afterwards", deliverable: "Supplementary written responses" },
     ],
     faqs: [
       {
-        question: "When is oral evidence required for Pakistan cases?",
+        question: "Will the author need to attend the hearing?",
         answer:
-          "Most commonly in Upper Tribunal country guidance cases or where the tribunal directs. First-tier Tribunal cases may also require oral evidence on complex country guidance points such as MN and Others [2012].",
+          "Usually only in Upper Tribunal country guidance cases or when directed. A First-tier hearing may also call for it where a difficult point arises, for example on applying MN and Others [2012].",
       },
       {
-        question: "How should solicitors prepare experts for oral evidence?",
+        question: "What does the author need before the hearing?",
         answer:
-          "Provide the full tribunal bundle, grounds of appeal, Home Office decision, and any country guidance decisions. Confirm hearing date and format (in person or video) well in advance.",
+          "The full bundle, the grounds of appeal, the Home Office decision and any country guidance cases, plus the hearing date and whether it is in person or by video, as early as possible.",
       },
       {
-        question: "Is there an additional fee for tribunal attendance?",
-        answer: "Yes. Oral evidence fees are quoted separately based on hearing duration, preparation time, and travel if required.",
+        question: "Does attending the hearing cost extra?",
+        answer: "Yes. Attendance is quoted separately, depending on preparation time, the length of the hearing and any travel.",
       },
     ],
   },
