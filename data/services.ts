@@ -250,7 +250,7 @@ export const services: Service[] = [
     metaDescription:
       "Where a refusal leans on a Pakistan CPIN, these reports show the tribunal what newer and more specific evidence says, from Ahmadi cases to state protection.",
     content: [
-      "Pakistan CPINs are updated only every few years, while conditions for Ahmadis, political activists and others can shift quickly. A CPIN challenge report sets out where the CPIN no longer reflects the evidence or misses the appellant's profile.",
+      "Conditions for Ahmadis, political activists and others in Pakistan can shift faster than the CPINs are revised. A CPIN challenge report sets out where the CPIN no longer reflects the evidence or misses the appellant's profile.",
       "Common challenge areas include the March 2025 Ahmadi CPIN (Version 6.0), actors of protection, internal relocation for women, political opposition risk, and blasphemy acquittal safety.",
     ],
     relatedHref: "/cpin-country-guidance",
