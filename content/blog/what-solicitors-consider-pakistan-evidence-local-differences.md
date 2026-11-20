@@ -1,4 +1,5 @@
 ---
+seoTitle: "Pakistan Evidence on Local and Provincial Differences"
 title: "Pakistan Country Evidence for Local and Provincial Differences: What Solicitors Should Consider"
 description: "What solicitors should consider when reviewing Pakistan country evidence for local and provincial differences—CPIN geography, urban/rural context, and when expert evidence may help."
 date: "2026-10-01"

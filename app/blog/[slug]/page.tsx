@@ -19,7 +19,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getBlogBySlug(slug);
   if (!post) return {};
   const meta = createMetadata({
-    title: post.title,
+    // Shorter search title where the headline is too long to fit (the on-page headline is unchanged).
+    title: post.seoTitle ?? post.title,
     description: post.description,
     path: `/blog/${post.slug}`,
   });

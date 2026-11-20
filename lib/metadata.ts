@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fitDescription, fitTitle } from "@/lib/fit";
 import { SITE_URL } from "./constants";
 import { isProductionSite } from "./seo/is-production";
 
@@ -26,8 +27,12 @@ export function createMetadata({
 }): Metadata {
   const url = `${SITE_URL}${path}`;
   const blockIndexing = noindex || !isProductionSite();
+  // "Page | Brand" when it fits in 60 characters, otherwise shortened at a natural break (never mid-word);
+  // absolute, so the layout template cannot add the brand a second time. Descriptions fitted to 110–155.
+  title = fitTitle(title, "fit");
+  description = fitDescription(description);
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {
